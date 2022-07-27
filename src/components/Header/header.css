@@ -1,0 +1,80 @@
+header {
+    
+    padding: 40px 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.partLogo {
+    margin-right: 20px;
+}
+.headerNav {
+    display: flex;
+    
+}
+.headerNav a {
+    
+    margin-right: 30px;
+    font-size: 18px;
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.headerNavLink {
+    position: relative;
+}
+.headerNavLink::before {
+    align-items: center;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    bottom: -7px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #282FD2;
+    transform: scale(0);
+    transition: transform .3s ease-in;
+}
+.headerNavLink:hover::before {
+    transform: scale(1);
+}
+.headerNavLink::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    background-color: #282FD2;
+    transform: scale(0);
+    transition: transform .3s ease-in;
+}
+
+.headerNavLink:hover::after {
+    transform: scale(1);
+}
+.contactBtn {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 198px;
+    height: 60px;
+    background-color: #282FD2;
+    border: 1px solid #282FD2;
+    transition: all .2s ease-in-out;  
+    border-radius: 3px;  
+}
+
+.contactBtn:hover {
+    color: #282FD2;
+    background-color: #EEF1FC ;
+}

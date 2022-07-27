@@ -1,0 +1,18 @@
+.modalWrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    filter: blur(40px);
+    width: 100vw;
+    height: 100vh;
+    
+}
+.modalBlur {
+    filter: blur(10px);
+    
+}
+.aaa {
+    width: 100vw;
+    height: 100vh;
+}
