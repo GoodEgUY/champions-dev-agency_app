@@ -1,18 +1,94 @@
 .modalWrapper {
-    display: none;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   z-index: 5;
     position: fixed;
     left: 0;
     top: 0;
-    filter: blur(40px);
+    
     width: 100vw;
     height: 100vh;
     
 }
-.modalBlur {
-    filter: blur(10px);
+.modalBody {
+    color: white;
+    padding: 35px 80px 35px 35px;
+    position: relative;
+    border-radius: 4px;
+    width: 529px;
+    height: 240px;
+    background-color: #282FD2;
     
 }
-.aaa {
-    width: 100vw;
-    height: 100vh;
+.modalBody::backdrop {
+    filter: blur(5px);
+}
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.titleModal {
+    margin: 0;
+    font-size: 30px;
+    font-family: Noah-700;
+}
+
+.modalNav {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.icoModal {
+    margin-right: 10px;
+}
+.navLinkModal {
+    
+    margin-right: 25px;
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+.navLinkModal:hover {
+    color:#FBB83E;
+}
+
+.navLinkModal::before {
+    align-items: center;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    bottom: -15px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #FBB83E;
+    transform: scale(0);
+    transition: transform .4s ease-in;
+}
+.navLinkModal:hover::before {
+    transform: scale(1);
+}
+.navLinkModal::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -17px;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    background-color: #FBB83E;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.navLinkModal:hover::after {
+    transform: scale(1);
 }

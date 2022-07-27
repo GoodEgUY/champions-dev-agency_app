@@ -1,5 +1,6 @@
 header {
-    
+   
+
     padding: 40px 0;
     justify-content: space-between;
     display: flex;
@@ -16,16 +17,19 @@ header {
     display: flex;
     
 }
-.headerNav a {
-    
+
+
+.headerNavLink {
     margin-right: 30px;
     font-size: 18px;
     color: #2C2C2C;
     text-decoration: none;
+    position: relative;
+    transition: all .2s ease-in-out;
 }
 
-.headerNavLink {
-    position: relative;
+.headerNavLink:hover {
+    color: #282FD2;
 }
 .headerNavLink::before {
     align-items: center;
@@ -34,13 +38,13 @@ header {
     display: block;
     position: absolute;
     margin-left: 10px;
-    bottom: -7px;
+    bottom: -15px;
     left: 50%;
     width: 5px;
     height: 5px;
     background-color: #282FD2;
     transform: scale(0);
-    transition: transform .3s ease-in;
+    transition: transform .4s ease-in;
 }
 .headerNavLink:hover::before {
     transform: scale(1);
@@ -50,13 +54,13 @@ header {
     content: "";
     display: block;
     position: absolute;
-    top: 100%;
+    bottom: -17px;
     left: 40%;
     width: 10px;
     height: 10px;
     background-color: #282FD2;
     transform: scale(0);
-    transition: transform .3s ease-in;
+    transition: transform .2s ease-in;
 }
 
 .headerNavLink:hover::after {

@@ -1,8 +1,8 @@
 import React from "react";
-import "./modalcontact.css";
+import "./modalcallback.css";
 
 
-const ModalContact = (props) => {
+const ModalCallback = (props) => {
   return (
   <div className="modalWrapper">
     <div className="modalBody">
@@ -24,4 +24,4 @@ const ModalContact = (props) => {
   );
 }
 
-export default ModalContact;
+export default ModalCallback;

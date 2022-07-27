@@ -1,15 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
+import Portfolio from "../Portfolio/Portfolio";
 
-function Main () {
-    const [blur,setBlur] = useState("blur(0px)");
-    
-    return ( 
-    <div style={{filter:{blur}}}>
-        <Header blurWrapper={() => setBlur("blur(4px)")}/>
+function Main() {
 
-    </div>
-        
+
+    return (
+        <div>
+            <Header />
+            <Portfolio />
+
+        </div>
+
     );
 }
 
