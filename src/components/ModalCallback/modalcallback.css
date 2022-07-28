@@ -1,8 +1,10 @@
 .modalCallbackBody {
     position: relative;
-    background-color: #282FD2 ;
+    background-color: #282FD2;
     padding: 35px;
     border-radius: 10px;
+    animation: fade .4s running;
+    
 }
 
 
@@ -19,12 +21,14 @@
     font-size: 30px;
     margin: 10px auto;
 }
+
 .callbackFormContent p {
     font-family: Noah-400;
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 30px;
 }
+
 .callbackForm input {
     padding: 15px;
     font-size: 18px;
@@ -33,31 +37,45 @@
     width: 100%;
     height: 55px;
     background-color: white;
-    color:#9A9A9A ;
+    color: #2C2C2C;
     margin-bottom: 10px;
 }
+
+.callbackForm input::placeholder {
+    color: #9A9A9A;
+}
+
 .callbackForm input:focus {
     outline: none;
 }
 
 .callbackMOdalBtn {
+    border: 1px solid #FBB83E;
     color: white;
-  width: 100%;
-  height: 75px;  
-  background-color: #FBB83E;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: #FBB83E;
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.callbackMOdalBtn:hover {
+    background-color: #282FD2;
+    color: #FBB83E;
 }
 
 .policyTitle {
     margin-top: 10px;
     font-size: 14px;
 }
+
 .policyTitle a {
     text-decoration: none;
-    color:#FBB83E;
+    color: #FBB83E;
 }
+
 .policyTitle a:hover {
     text-decoration: underline;
 }

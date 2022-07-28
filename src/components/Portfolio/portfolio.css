@@ -2,7 +2,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 130px 0;
 }
 
 
@@ -37,8 +37,8 @@
     color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
-    width: 198px;
-    height: 60px;
+    width: 280px;
+    height: 75px;
     background-color: #282FD2;
     border: 1px solid #282FD2;
     transition: all .2s ease-in-out;  
@@ -81,6 +81,137 @@
     animation-delay: 1.5s;
 } 
 
+
+/* Benefits */
+.benefitsLogo {
+    transform: translateX(-36px)translateY(110px);
+    margin-right: 29px;
+    width: 373px;
+    height: 490px;
+    
+}
+.benefitsContent {
+    margin: 100px 0;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.benefitsTitle {
+    width: 722px;
+    
+    display: flex;
+    flex-direction:column;
+    
+}
+.benefitsTitle h3 {
+    font-size: 30px;
+    font-family: Noah-700;
+    margin-top: 0px;
+    margin-bottom:60px ;
+}
+.benefitsCartsFirst {
+    display: flex;
+    margin-bottom: 20px ;
+    
+}
+.benefitsCartsSecond {
+    
+    display: flex;
+}
+.benefitsCart {
+    margin-right: 20px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: left;
+    width: 350px;
+    transition: all .3s ease-in;
+}
+
+.benefitsCart:hover {
+    background-color: #282FD2;
+    color: white;
+}
+.benefitsCart img {
+    margin-bottom: 10px;  
+} 
+.benefitsCart h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}        
+.benefitsTitle p {
+    margin: 0;
+    font-size: 18px;
+}
+.benefitsTitle h5 {
+    font-size: 18px;
+    font-family: Noah-700;
+}
+
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes livitation {
     0% {
         transform: translateY(0);
@@ -101,7 +232,7 @@
 
 @media (max-device-width: 1367px) {
     .introContent {
-        padding: 30px 0;
+        
     }
     .introImages {
             width: 394px;
