@@ -14,7 +14,10 @@ const Portfolio = () => {
                     <button className="callbackBtn" onClick={() => {setModalOpened(true)}}>заказать проект</button>
                 </div>
                 <div className="introImages">
-                    <img src="./images/intro3.png" alt="SergeyRomanov" className="introImage"/>
+                    <img src="./images/intro.png" alt="SergeyRomanov" className="introImage"/>
+                    <img src="./images/telapp.png" alt=""  className="telImage"/>
+                    <img src="./images/note.png" alt="" className="noteImage" />
+                    <img src="./images/pc.png" alt="" className="pcImage"/>
                 </div>
                 
             </div>

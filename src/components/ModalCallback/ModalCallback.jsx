@@ -5,18 +5,18 @@ import "./modalcallback.css";
 const ModalCallback = (props) => {
   return (
   <div className="modalWrapper">
-    <div className="modalBody">
+    <div className="modalCallbackBody">
       <img src="./images/cross.png" className="closeModal" alt="Close" width="24" height="24" onClick={props.closeModal} />
-        <p className="titleModal">Пишите, звоните, куда удобно всегда на связи. Ответим на любые вопросые.</p>
-        <div className="modalNav">
-          <img src="./images/telegram.png" alt="telegram"  className="icoModal"/>
-          <a href="https" className="navLinkModal">Telegram</a>
-          <img src="./images/whatsapp.png" alt="telegram"  className="icoModal"/>
-          <a href="https" className="navLinkModal">Whats up</a>
-        
-        
+        <div className="callbackFormContent">
+        <h4>Обсудить проект</h4>
+        <p>Оставьте свои контакты и мы свяжемся, чтобы обсудить ваш проект.</p>
+        <form action="" className="callbackForm" >
+          <input type="textr"  placeholder="Введите ваше имя"/>
+          <input type="tel" placeholder="+XXX XXX XXX"/>
+          <button className="callbackMOdalBtn" callbackMOdalBtn>ОТПРАВИТЬ</button>
+        </form>
+        <span className="policyTitle">Нажимая кнопку «Отправить», Вы соглашаетесь с<br/><a href="">политикой конфиденциальности</a></span>
         </div>
-        
     </div>
   </div>
   

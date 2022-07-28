@@ -22,8 +22,10 @@
 }
 .introTitle span {
     border-radius: 5px;
-    border: 1px tomato dashed;
-    background-color: rgba(255, 99, 71, 0.555)
+    background-image: url(../../../public/images/captureBorder.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 .introParag {
     margin: 0;
@@ -46,6 +48,49 @@
     background-color: #EEF1FC ;
 }
 .introImage {
-    width: 461px;
+    position: relative;
+    width: 494px;
     height: 693px;
+}
+.introImages {
+    width: 494px;
+    height: 693px;
+    position: relative;
+}
+.telImage {
+    position: absolute;
+    left: 160px;
+    animation: livitation 5s infinite ;
+    animation-delay: 3s;
+}
+.noteImage {
+    position: absolute;
+    left: 0;
+    bottom: 170px;
+    animation: livitation 5s infinite;
+}
+.pcImage {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    animation: livitation 5s infinite ;
+    animation-delay: 1.5s;
+} 
+
+@keyframes livitation {
+    0% {
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-9px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-9px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
