@@ -2,7 +2,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 130px 0;
+    padding: 100px 0;
 }
 
 
@@ -22,6 +22,7 @@
     color: black ;
 }
 .introTitle span {
+    color: #FBB83E;
     border-radius: 5px;
     background-image: url(../../../public/images/captureBorder.png) ;
     background-size: contain;
@@ -33,6 +34,7 @@
 }
 
 .callbackBtn {
+    cursor: pointer;
     margin-top: 70px;
     color: #ffffff;
     font-size: 16px;
@@ -91,7 +93,7 @@
     
 }
 .benefitsContent {
-    margin: 100px 0;
+    padding: 100px 0;
     
     display: flex;
     justify-content: space-between;
@@ -120,9 +122,10 @@
     display: flex;
 }
 .benefitsCart {
+    border-inline: 1px solid white;
     margin-right: 20px;
     padding: 30px;
-    background-color: #FFFFFF;
+    background-color: #f5f7fd;
     border-radius: 10px;
     text-align: left;
     width: 350px;
@@ -159,13 +162,156 @@
     }
 }
 
+.portfolioContent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+.portfolioCarts {
+    justify-content: center;
+    display: flex;
+}
+.portfolioTitle {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-family: Noah-700;
+}
+.portfolioCard1 {
+    margin-right: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 450px;
+    height: 579px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../public/images/portCard1.png);
+}
+.portfolioCard1Hover{
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    width: 450px;
+    height: 579px;
+    background-image: url(../../../public/images/portCard1Hover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in;
+}
+.portfolioCard1Hover:hover {
+    opacity: 1;
+}
+.portfolioCardTitle {
+    width: 321px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 
+.portfolioCardTitle h5 {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-family: Noah-700;
+    font-size: 18px;
+}
+.portfolioCardTitle p {
+    margin: 0;
+    font-size: 18px;
+}
+.portfolioCardTitle img {
+    animation: arrowLink 3s infinite;
+    margin-left: 10px;
+}
 
+.portfolioCardTitleHover {
+    width: 321px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 
-
-
-
-
+.portfolioCardTitleHover h5 {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-family: Noah-700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.portfolioCardTitleHover p {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 18px;
+}
+.portfolioCardTitleHover img {
+    
+    animation: arrowLink 3s infinite;
+    margin-left: 10px;
+}
+.portfolioCard2 {
+    border-radius: 10px;
+    position: relative;
+    width: 450px;
+    height: 579px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../public/images/portCard2.png);
+}
+.portfolioCard2Hover{
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    width: 450px;
+    height: 579px;
+    background-image: url(../../../public/images/portCard2Hover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in;
+}
+.portfolioCard2Hover:hover {
+    opacity: 1;
+}
+@keyframes arrowLink {
+    0%{
+        transform: translateX(0);
+    } 
+    20% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
 

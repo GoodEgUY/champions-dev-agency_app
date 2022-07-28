@@ -81,6 +81,59 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <div className="portfolioContent">
+        <h3 className="portfolioTitle" >Портфолио нашей команды</h3>
+        <div className="portfolioCarts">
+          <div className="portfolioCard1">
+            <div className="portfolioCardTitle">
+              <h5>
+                Happy Del
+                <img src="./images/arrowBlack.png" alt="" />
+              </h5>
+              <p>
+                Агрегатор доставки еды на дом по регионам России. Стартап
+                мобильное приложение для android с нуля.
+              </p>
+            </div>
+            <div className="portfolioCard1Hover">
+              <div className="portfolioCardTitleHover">
+                <h5>
+                  Happy Del
+                  <img src="./images/arrowWhite.png" alt="" />
+                </h5>
+                <p>
+                  Агрегатор доставки еды на дом по регионам России. Стартап
+                  мобильное приложение для android с нуля.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="portfolioCard2">
+            <div className="portfolioCardTitle">
+              <h5>
+                Helppoint
+                <img src="./images/arrowBlack.png" alt="" />
+              </h5>
+              <p>
+                Сервис психологической онлайн помощи. Редизайн всего веб сайта,
+                улучшенное юзабилити.
+              </p>
+            </div>
+            <div className="portfolioCard2Hover">
+              <div className="portfolioCardTitleHover">
+                <h5>
+                  Helppoint
+                  <img src="./images/arrowWhite.png" alt="" />
+                </h5>
+                <p>
+                  Сервис психологической онлайн помощи. Редизайн всего веб
+                  сайта, улучшенное юзабилити.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
