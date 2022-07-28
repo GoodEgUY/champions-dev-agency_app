@@ -7,13 +7,16 @@ const Portfolio = () => {
     return(
         <div className="content">
             {modalOpened ? <ModalCallback closeModal={() => setModalOpened(false)} /> : null}
-            <div className="slideContent">
+            <div className="introContent">
                 <div className="introText">
                     <h3 className="introTitle"><span>Лучшее</span> решение для <br/>Вашего бизнеса</h3>
-                    <p></p>
+                    <p className="introParag">Создание сайтов и мобильных приложений для любого ресторана россии и мира.</p>
                     <button className="callbackBtn" onClick={() => {setModalOpened(true)}}>заказать проект</button>
                 </div>
-                <div className="introImages"></div>
+                <div className="introImages">
+                    <img src="./images/intro3.png" alt="SergeyRomanov" className="introImage"/>
+                </div>
+                
             </div>
         </div>
     );

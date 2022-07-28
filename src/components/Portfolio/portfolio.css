@@ -1,18 +1,21 @@
-.slideContent {
-    padding-top: 100px;
+.introContent {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 
 .introText {
     display:flex;
     flex-direction: column;
-    align-items:;
+    margin: 0;
     width: 634px;
 }
 
 
 
 .introTitle {
+    margin: 20px 0;
     font-size: 50px;
     font-family: Noah-700;
     color: black ;
@@ -22,8 +25,12 @@
     border: 1px tomato dashed;
     background-color: rgba(255, 99, 71, 0.555)
 }
+.introParag {
+    margin: 0;
+}
 
 .callbackBtn {
+    margin-top: 70px;
     color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
@@ -37,4 +44,8 @@
 .callbackBtn:hover {
     color: #282FD2;
     background-color: #EEF1FC ;
+}
+.introImage {
+    width: 461px;
+    height: 693px;
 }
