@@ -1,0 +1,102 @@
+.portfolioCard1 {
+    color: #2C2C2C;
+    margin-right: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 480px;
+    height: 579px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.portfolioCard1Hover{
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    width: 480px;
+    height: 579px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in;
+}
+.portfolioCard1Hover:hover {
+    opacity: 1;
+}
+.portfolioCardTitle {
+    width: 321px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.portfolioCardTitle h5 {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-family: Noah-700;
+    font-size: 18px;
+}
+.portfolioCardTitle p {
+    margin: 0;
+    font-size: 18px;
+}
+.portfolioCardTitle img {
+    
+    margin-left: 10px;
+}
+
+.portfolioCardTitleHover {
+    width: 321px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.portfolioCardTitleHover h5 {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-family: Noah-700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.portfolioCardTitleHover p {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 18px;
+}
+.portfolioCardTitleHover img {
+    
+    animation: arrowLink 2s infinite;
+    margin-left: 10px;
+}
+
+@keyframes arrowLink {
+    0%{
+        transform: translateX(0);
+    } 
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

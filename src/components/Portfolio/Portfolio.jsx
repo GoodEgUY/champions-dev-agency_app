@@ -1,9 +1,25 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import ModalCallback from "../ModalCallback/ModalCallback";
+import PortfolioCard from "../PortfolioCard/PortfolioCard";
 
 const Portfolio = () => {
   const [modalOpened, setModalOpened] = useState(false);
+
+  const portfolioBase = [
+    {
+      name: "Happy Del",
+      title:"Агрегатор доставки еды на дом по регионам России. Стартап мобильное приложение для android с нуля.",
+      imageUrlUnHover: "./images/PortfolioCardsImages/portCard1.png",
+      imageUrlHover: "./images/PortfolioCardsImages/portCard1Hover.png",
+    },
+    {
+      name: "Helpoint",
+      title:"Сервис психологической онлайн помощи. Редизайн всего веб сайта, улучшенное юзабилити.",
+      imageUrlUnHover: "./images/PortfolioCardsImages/portCard2.png",
+      imageUrlHover: "./images/PortfolioCardsImages/portCard2Hover.png",
+    }
+  ];
   return (
     <div className="content">
       {modalOpened ? (
@@ -82,56 +98,13 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="portfolioContent">
-        <h3 className="portfolioTitle" >Портфолио нашей команды</h3>
+        <h3 className="portfolioTitle">Портфолио нашей команды</h3>
         <div className="portfolioCarts">
-          <div className="portfolioCard1">
-            <div className="portfolioCardTitle">
-              <h5>
-                Happy Del
-                <img src="./images/arrowBlack.png" alt="" />
-              </h5>
-              <p>
-                Агрегатор доставки еды на дом по регионам России. Стартап
-                мобильное приложение для android с нуля.
-              </p>
-            </div>
-            <div className="portfolioCard1Hover">
-              <div className="portfolioCardTitleHover">
-                <h5>
-                  Happy Del
-                  <img src="./images/arrowWhite.png" alt="" />
-                </h5>
-                <p>
-                  Агрегатор доставки еды на дом по регионам России. Стартап
-                  мобильное приложение для android с нуля.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="portfolioCard2">
-            <div className="portfolioCardTitle">
-              <h5>
-                Helppoint
-                <img src="./images/arrowBlack.png" alt="" />
-              </h5>
-              <p>
-                Сервис психологической онлайн помощи. Редизайн всего веб сайта,
-                улучшенное юзабилити.
-              </p>
-            </div>
-            <div className="portfolioCard2Hover">
-              <div className="portfolioCardTitleHover">
-                <h5>
-                  Helppoint
-                  <img src="./images/arrowWhite.png" alt="" />
-                </h5>
-                <p>
-                  Сервис психологической онлайн помощи. Редизайн всего веб
-                  сайта, улучшенное юзабилити.
-                </p>
-              </div>
-            </div>
-          </div>
+          {portfolioBase.map((obj) => (
+            <PortfolioCard name={obj.name} title={obj.title} urluh={obj.imageUrlUnHover} urlh={obj.imageUrlHover} />
+          ))}
+          
+          
         </div>
       </div>
     </div>
