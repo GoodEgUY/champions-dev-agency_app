@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../Header/Header";
 import Portfolio from "../Portfolio/Portfolio";
+import Footer from "../Footer/Footer";
 
 function Main() {
 
@@ -9,6 +10,7 @@ function Main() {
         <div>
             <Header />
             <Portfolio />
+            <Footer/>
 
         </div>
 
