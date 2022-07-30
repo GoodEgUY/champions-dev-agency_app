@@ -110,12 +110,11 @@ const Portfolio = () => {
       </div>
       <Services/>
       <div className="callbackContent">
-        <img src="./images/userLetter.png" alt="" width={308.5} height={430.5}/>
+        <img src="./images/userLetter.png" alt="" width={558} height={458}/>
       <div className="windowCallbackBody">
-      <img src="./images/cross.png" className="closeModal" alt="Close" width="24" height="24"/>
         <div className="callbackFormContent">
         <h4>Будьте на шаг впереди ваших конкурентов</h4>
-        <p>Оставьте ваши контакты и мы и перезвоним вам для достижения ваших больших или маленьких целей</p>
+        <p>Оставьте ваши контакты и мы <br/>перезвоним вам для достижения ваших больших или маленьких целей</p>
         <form action="" className="callbackForm" >
           <input type="textr"  placeholder="Введите ваше имя"/>
           <input type="tel" placeholder="+XXX XXX XXX"/>

@@ -23,6 +23,7 @@
     justify-content: space-between;
 }
 .servicePrice h5 {
+    color: #2C2C2C;
     font-size: 18px;
     font-family: Noah-700;
     margin: 0;
@@ -51,4 +52,11 @@
 .aboutServiceBtn:hover {
     color: #282FD2;
     background-color: #f5f7fd;
+}
+.serviceTitle h5 {
+    margin: 20px 0 10px 0;
+}
+.serviceTitle p {
+    margin-top: 0;
+    margin-bottom: 20px          ;
 }
