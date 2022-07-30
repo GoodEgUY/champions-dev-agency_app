@@ -138,7 +138,7 @@
 }
 
 .benefitsCart:hover {
-    border: none;
+    border-color: #282FD2;
     background-color: #282FD2;
     color: white;
 }
@@ -190,7 +190,19 @@
     font-size: 30px;
     font-family: Noah-700;
 }
-
+.callbackContent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+.windowCallbackBody {
+    margin-left: 100px;
+    border-radius: 10px;
+    background-color: #282FD2;
+    width: 432px;
+    padding: 35px;
+}
 
 
 

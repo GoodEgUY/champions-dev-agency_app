@@ -1,0 +1,54 @@
+.servicesCards {
+    flex-direction: column;
+    display: flex;
+    width: 726px;
+
+}
+.servicesRow {
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+.serviceCard {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #f5f7fd;
+    width: 352px;
+    padding: 30px;
+}
+.servicePrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicePrice h5 {
+    font-size: 18px;
+    font-family: Noah-700;
+    margin: 0;
+}
+.serviceTitle p {
+    color: #2C2C2C;
+    font-size: 18px;
+}
+.serviceTitle h5 {
+    font-family: Noah-700;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+.aboutServiceBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #282FD2;
+    background-color: #282FD2;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    font-family: Noah-700;
+    transition: all .2s ease-in;
+}
+.aboutServiceBtn:hover {
+    color: #282FD2;
+    background-color: #f5f7fd;
+}
