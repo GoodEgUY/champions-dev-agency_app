@@ -10,16 +10,18 @@ const Portfolio = () => {
   const portfolioBase = [
     {
       name: "Happy Del",
-      title:"Агрегатор доставки еды на дом по регионам России. Стартап мобильное приложение для android с нуля.",
+      title:
+        "Агрегатор доставки еды на дом по регионам России. Стартап мобильное приложение для android с нуля.",
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard1.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard1Hover.png",
     },
     {
       name: "Helpoint",
-      title:"Сервис психологической онлайн помощи. Редизайн всего веб сайта, улучшенное юзабилити.",
+      title:
+        "Сервис психологической онлайн помощи. Редизайн всего веб сайта, улучшенное юзабилити.",
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard2.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard2Hover.png",
-    }
+    },
   ];
   return (
     <div className="content">
@@ -102,27 +104,70 @@ const Portfolio = () => {
         <h3 className="portfolioTitle">Портфолио нашей команды</h3>
         <div className="portfolioCarts">
           {portfolioBase.map((obj) => (
-            <PortfolioCard name={obj.name} title={obj.title} urluh={obj.imageUrlUnHover} urlh={obj.imageUrlHover} />
+            <PortfolioCard
+              name={obj.name}
+              title={obj.title}
+              urluh={obj.imageUrlUnHover}
+              urlh={obj.imageUrlHover}
+            />
           ))}
-          
-          
         </div>
       </div>
-      <Services/>
+      <Services />
       <div className="callbackContent">
-        <img src="./images/userLetter.png" alt="" width={558} height={458}/>
-      <div className="windowCallbackBody">
-        <div className="callbackFormContent">
-        <h4>Будьте на шаг впереди ваших конкурентов</h4>
-        <p>Оставьте ваши контакты и мы <br/>перезвоним вам для достижения ваших больших или маленьких целей</p>
-        <form action="" className="callbackForm" >
-          <input type="textr"  placeholder="Введите ваше имя"/>
-          <input type="tel" placeholder="+XXX XXX XXX"/>
-          <button className="callbackMOdalBtn" callbackMOdalBtn>ОТПРАВИТЬ</button>
-        </form>
-        <span className="policyTitle">Нажимая кнопку «Отправить», Вы соглашаетесь с<br/><a href="">политикой конфиденциальности</a></span>
+        <img src="./images/userLetter.png" alt="" width={558} height={458} />
+        <div className="windowCallbackBody">
+          <div className="callbackFormContent">
+            <h4>Будьте на шаг впереди ваших конкурентов</h4>
+            <p>
+              Оставьте ваши контакты и мы <br />
+              перезвоним вам для достижения ваших больших или маленьких целей
+            </p>
+            <form action="" className="callbackForm">
+              <input type="textr" placeholder="Введите ваше имя" />
+              <input type="tel" placeholder="+XXX XXX XXX" />
+              <button className="callbackMOdalBtn" callbackMOdalBtn>
+                ОТПРАВИТЬ
+              </button>
+            </form>
+            <span className="policyTitle">
+              Нажимая кнопку «Отправить», Вы соглашаетесь с<br />
+              <a href="">политикой конфиденциальности</a>
+            </span>
+          </div>
         </div>
-    </div>
+      </div>
+      <div className="teamContent">
+        <h3>Наша команда профессионалов мечты</h3>
+        <div className="teamList">
+          <div className="teamItem">
+            <div className="teamItemImg">
+            <div className="teamItemTitle">
+                <h3>Андрей Момотов</h3>
+                <p>Product designer</p>
+              </div>
+              <img src="./images/team/Card team.png" alt="" />
+            </div>
+          </div>
+          <div className="teamItem">
+            <div className="teamItemImg">
+            <div className="teamItemTitle">
+                <h3>Илья Пугачьов</h3>
+                <p>Web development</p>
+              </div>
+              <img src="./images/team/Card team-1.png" alt="" />
+            </div>
+          </div>
+          <div className="teamItem">
+            <div className="teamItemImg">
+              <div className="teamItemTitle">
+                <h3>Лидия Лебедева</h3>
+                <p>Marketer</p>
+              </div>
+              <img src="./images/team/Card team-2.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

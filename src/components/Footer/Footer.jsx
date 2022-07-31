@@ -9,7 +9,7 @@ const Footer = () => {
           <img src="./images/logo-ill.png" alt="Logo" className="partLogo" />
           <img src="./images/logo.png" alt="Logo" className="partLogo" />
         </div>
-        <p>Политика обработки персональных данных</p>
+        <a href="/">Политика обработки персональных данных</a>
       </div>
       <div className="footerNav">
         <h5>Навигация</h5>
