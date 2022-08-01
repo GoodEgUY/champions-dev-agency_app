@@ -3,7 +3,8 @@ import "./portfolio.css";
 import ModalCallback from "../ModalCallback/ModalCallback";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import Services from "../Services/Services";
-import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
+
+
 
 const Portfolio = () => {
   const [modalOpened, setModalOpened] = useState(false);

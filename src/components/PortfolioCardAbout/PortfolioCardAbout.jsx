@@ -1,13 +1,14 @@
 import React from "react";
 import "./portfoliocardabout.css";
 import { Tabs, TabContent, TabLink } from "react-tabs-redux";
+import {Link } from "react-router-dom";
 
 const PortfolioCardAbout = () => {
   return (
     <div className="portfolioItemContent">
       <div className="backToMain">
         <img src="./images/PortfolioCardsImages/arrows/arrowBlack.png" alt="" />
-        <a href="/">Назад</a>
+        <Link to="/">Назад</Link>
       </div>
       <div className="portfolioAboutNav">
         <a href="/" className="headerNavLink">

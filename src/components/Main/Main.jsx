@@ -9,8 +9,8 @@ import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
 function Main() {
   return (
     <>
+      <Header />
       <Router>
-        <Header />
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/happy-del" element={<PortfolioCardAbout />} />

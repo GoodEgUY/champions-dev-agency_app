@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfoliocard.css"
-
+import {Link } from "react-router-dom";
 
 const PortfolioCard = (props) => {
     
@@ -16,7 +16,7 @@ const PortfolioCard = (props) => {
                 {props.title}
               </p>
             </div>
-            <a href={props.url}>
+            <Link to={props.url}>
             <div className="portfolioCard1Hover">
                 <img src={props.urlh} alt="" className="portfolioCardImageHover"/>
               <div className="portfolioCardTitleHover"> 
@@ -29,7 +29,7 @@ const PortfolioCard = (props) => {
                 </p>
               </div>
             </div>
-            </a>
+            </Link>
           </div>
     );
 }
