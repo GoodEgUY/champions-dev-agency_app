@@ -173,7 +173,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PortfolioCardAbout/>
+      
     </div>
   );
 };

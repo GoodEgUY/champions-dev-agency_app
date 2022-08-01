@@ -6,11 +6,11 @@ const Services = () => {
     return(
         <div className="servicesContent">
             <h3>Услуги по разработке IT продуктов</h3>
-            <div className="servicesHeader">
+            {/* <div className="servicesHeader">
                 <a href="" className="servicesNavLink">Веб разработка</a>
                 <a href="" className="servicesNavLink">UX/UI дизайн</a>
                 <a href="" className="servicesNavLink">Маркетинг</a>
-            </div>
+            </div> */}
             <DevServices/>
         </div>
     );

@@ -30,6 +30,8 @@
 }
 
 .callbackForm input {
+    
+    font-family: Noah-400;
     padding: 15px;
     font-size: 18px;
     border-radius: 5px;
@@ -50,6 +52,7 @@
 }
 
 .callbackMOdalBtn {
+    font-family: Noah-700;
     cursor: pointer;
     border: 1px solid #FBB83E;
     color: white;
