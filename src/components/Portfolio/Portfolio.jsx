@@ -3,6 +3,7 @@ import "./portfolio.css";
 import ModalCallback from "../ModalCallback/ModalCallback";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import Services from "../Services/Services";
+import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
 
 const Portfolio = () => {
   const [modalOpened, setModalOpened] = useState(false);
@@ -14,6 +15,7 @@ const Portfolio = () => {
         "Агрегатор доставки еды на дом по регионам России. Стартап мобильное приложение для android с нуля.",
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard1.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard1Hover.png",
+      url: "/happy-del"
     },
     {
       name: "Helpoint",
@@ -21,7 +23,8 @@ const Portfolio = () => {
         "Сервис психологической онлайн помощи. Редизайн всего веб сайта, улучшенное юзабилити.",
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard2.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard2Hover.png",
-    },
+      url: "/happy-del"
+    }
   ];
   return (
     <div className="content">
@@ -109,6 +112,7 @@ const Portfolio = () => {
               title={obj.title}
               urluh={obj.imageUrlUnHover}
               urlh={obj.imageUrlHover}
+              url={obj.url}
             />
           ))}
         </div>
@@ -169,6 +173,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <PortfolioCardAbout/>
     </div>
   );
 };

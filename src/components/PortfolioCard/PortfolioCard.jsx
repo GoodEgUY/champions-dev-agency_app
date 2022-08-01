@@ -16,6 +16,7 @@ const PortfolioCard = (props) => {
                 {props.title}
               </p>
             </div>
+            <a href={props.url}>
             <div className="portfolioCard1Hover">
                 <img src={props.urlh} alt="" className="portfolioCardImageHover"/>
               <div className="portfolioCardTitleHover"> 
@@ -28,6 +29,7 @@ const PortfolioCard = (props) => {
                 </p>
               </div>
             </div>
+            </a>
           </div>
     );
 }
