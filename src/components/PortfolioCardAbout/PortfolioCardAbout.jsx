@@ -65,7 +65,7 @@ const PortfolioCardAbout = () => {
               </p>
             </TabContent>
             <TabContent for="problem">
-              <p> /* coghzgdghdfgfdgdf */</p>
+              <p>test 2 test 2 test 2 test 2 test 2 test 2 test 2 test 2 test 2 test 2 test 2 test 2</p>
             </TabContent>
             <TabContent for="result">
               <img
@@ -88,13 +88,13 @@ const PortfolioCardAbout = () => {
               </p>
             </TabContent>
             <TabContent for="goals">
-              <p> /* coghzgdghdfgfdgdf */</p>
+              <p> test 4 test 4 test 4 test 4 test 4 test 4 test 4 test 4 test 4 test 4 test 4 test 4</p>
             </TabContent>
             <TabContent for="time">
-              <p> /* content for tab #1 */</p>
+              <p> test 5 test 5 test 5 test 5 test 5 test 5 test 5 test 5test 5 test 5test 5 test 5</p>
             </TabContent>
             <TabContent for="stages">
-              <p> /* coghzgdghdfgfdgdf */</p>
+              <p> test 6 test 6 test 6 test 6 test 6 test 6 test 6 test 6 test 6 test 6 test 6 test 6</p>
             </TabContent>
           </div>
         </div>

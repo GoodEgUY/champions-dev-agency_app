@@ -8,9 +8,9 @@ import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
 
 function Main() {
   return (
-    <div>
-      <Header />
+    <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Portfolio />} />
           <Route path="/happy-del" element={<PortfolioCardAbout />} />
@@ -18,7 +18,7 @@ function Main() {
       </Router>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
