@@ -6,15 +6,23 @@
     align-items: center;
 }
 .servicesContent h3 {
+    text-align: center;
     color: #2C2C2C;
     font-size: 30px;
     font-family: Noah-700;
 }
 .servicesHeader {
-    margin-left: 30px;
+    width: 100%;
+    text-align:left;
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
     margin-bottom: 55px;
 }
 .servicesNavLink {
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
     position: relative;
     text-decoration: none;
     color: #2C2C2C;
@@ -58,4 +66,47 @@
 
 .servicesNavLink:hover::after {
     transform: scale(1);
+}
+
+
+.callServiceFormBody {
+    margin-bottom: 20px;
+    background-color: #f5f7fd;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 35px;
+}
+.callServiceFormContent {
+    text-align: center;
+}
+.callServiceFormContent span {
+    margin: 0;
+}
+.callServiceFormContent h4 {
+    font-size: 30px;
+    color: #2C2C2C;
+    margin: 0 0 0 20px;
+}
+.priceDoService {
+    font-size: 18px;
+    color: #FBB83E;
+    background-image: url(../../../public/images/serviceFormBack.png);
+}
+
+.callServiceBtn {
+    font-family: Noah-700;
+    cursor: pointer;
+    border: 1px solid #FBB83E;
+    color: white;
+    width: 100%;
+    height: 75px;
+    background-color: #FBB83E;
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all .4s ease-in-out;
+}
+.callServiceBtn:hover {
+    background-color: #f5f7fd;
+    color: #FBB83E;
 }

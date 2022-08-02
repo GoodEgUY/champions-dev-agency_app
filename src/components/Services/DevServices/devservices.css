@@ -10,6 +10,7 @@
     
 }
 .serviceCard {
+    position: relative;
     border: 1px solid white;
     border-radius: 10px;
     margin-right: 20px;
@@ -57,6 +58,40 @@
     margin: 20px 0 10px 0;
 }
 .serviceTitle p {
-    margin-top: 0;
-    margin-bottom: 20px          ;
+    margin: 0;
+
+}
+
+.aboutService {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    top: 25px;
+    right: 25px;
+    font-size: 18px;
+    position: absolute;
+    
+}
+.aboutService p {
+    transition: all .2s ease-in-out;
+    margin: 0;
+}
+.aboutService svg {
+    margin-right: 5px;
+    transition: all .2s ease-in-out;
+}
+.aboutService:hover p {
+    color: #282FD2;
+}
+.aboutService:hover svg {
+    
+    fill: #282FD2;
+    
+}
+.landingPageService {
+    display: flex;
+}
+
+.tBlue {
+    color: #282FD2!important;
 }

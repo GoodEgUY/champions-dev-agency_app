@@ -131,7 +131,7 @@ const Portfolio = () => {
             <form action="" className="callbackForm">
               <input type="textr" placeholder="Введите ваше имя" />
               <input type="tel" placeholder="+XXX XXX XXX" />
-              <button className="callbackMOdalBtn" callbackMOdalBtn>
+              <button className="callbackModalBtn" >
                 ОТПРАВИТЬ
               </button>
             </form>
