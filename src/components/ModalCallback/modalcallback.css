@@ -51,7 +51,7 @@
     outline: none;
 }
 
-.callbackMOdalBtn {
+.callbackModalBtn {
     font-family: Noah-700;
     cursor: pointer;
     border: 1px solid #FBB83E;
@@ -65,7 +65,7 @@
     transition: all .4s ease-in-out;
 }
 
-.callbackMOdalBtn:hover {
+.callbackModalBtn:hover {
     background-color: #282FD2;
     color: #FBB83E;
 }

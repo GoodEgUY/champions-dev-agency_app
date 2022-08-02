@@ -3,10 +3,10 @@ import ModalContact from "../ModalContact/ModalContact";
 import "./header.css"
 
 
-const Header = (props) => {
+const Header = () => {
     const [modalOpened,setModalOpened] = useState(false);
     return (
-        
+        <div className="header">
         <header>
             {modalOpened ? <ModalContact closeModal={() => {setModalOpened(false)}}/> : null}
             <div className="logo">
@@ -22,7 +22,7 @@ const Header = (props) => {
             </div>
             <button className="contactBtn" onClick={ () => {setModalOpened(true)}}>СВЯЗАТЬСЯ</button>
         </header>
-        
+        </div>
     );
 }
 export default Header;

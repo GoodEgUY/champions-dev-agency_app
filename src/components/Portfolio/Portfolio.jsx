@@ -28,7 +28,7 @@ const Portfolio = () => {
     }
   ];
   return (
-    <div className="content">
+    <>
       {modalOpened ? (
         <ModalCallback closeModal={() => setModalOpened(false)} />
       ) : null}
@@ -175,7 +175,7 @@ const Portfolio = () => {
         </div>
       </div>
       
-    </div>
+    </>
   );
 };
 

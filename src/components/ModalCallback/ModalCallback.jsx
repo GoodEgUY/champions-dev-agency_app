@@ -13,9 +13,9 @@ const ModalCallback = (props) => {
         <form action="" className="callbackForm" >
           <input type="textr"  placeholder="Введите ваше имя"/>
           <input type="tel" placeholder="+XXX XXX XXX"/>
-          <button className="callbackMOdalBtn" callbackMOdalBtn>ОТПРАВИТЬ</button>
+          <button className="callbackModalBtn">ОТПРАВИТЬ</button>
         </form>
-        <span className="policyTitle">Нажимая кнопку «Отправить», Вы соглашаетесь с<br/><a href="">политикой конфиденциальности</a></span>
+        <span className="policyTitle">Нажимая кнопку «Отправить», Вы соглашаетесь с<br/><a href="#">политикой конфиденциальности</a></span>
         </div>
     </div>
   </div>

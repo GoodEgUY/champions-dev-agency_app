@@ -16,7 +16,7 @@ const PortfolioCard = (props) => {
                 {props.title}
               </p>
             </div>
-            <Link to={props.url}>
+            <Link to={props.url} onClick={window.scrollTo(0, 0)}>
             <div className="portfolioCard1Hover">
                 <img src={props.urlh} alt="" className="portfolioCardImageHover"/>
               <div className="portfolioCardTitleHover"> 

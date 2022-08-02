@@ -1,7 +1,14 @@
 .portfolioItemContent {
+    
     padding: 100px 0;
 }
+.backToMain a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
 .backToMain {
+
+    
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -14,7 +21,9 @@
 .portfolioAboutNav {
     margin-bottom: 40px;
 }
-
+.portfolioAboutNav a {
+    cursor: pointer;
+}
 .dashboardRow {
     margin-bottom: 20px;
     display: flex;
@@ -72,4 +81,37 @@
     background-color: #282FD2;
     font-family: Noah-400;
 
+}
+
+.activeAbNL {
+    color: #282FD2;
+}
+.activeAbNL::before {
+    align-items: center;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    bottom: -15px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #282FD2;
+    transform: scale(1);
+    
+}
+
+.activeAbNL::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -17px;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    background-color: #282FD2;
+    transform: scale(1);
+    
 }
