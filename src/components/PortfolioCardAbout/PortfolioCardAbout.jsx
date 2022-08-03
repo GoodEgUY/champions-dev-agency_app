@@ -31,8 +31,8 @@ const PortfolioCardAbout = () => {
   return (
     <div className="portfolioItemContent">
       <div className="backToMain">
-        <img src="./images/PortfolioCardsImages/arrows/arrowBlack.png" alt="" />
-        <Link to="/">Назад</Link>
+        <img src="../images/PortfolioCardsImages/arrows/arrowBlack.png" alt="" />
+        <Link to="/portfolio">Назад</Link>
       </div>
       <div className="portfolioAboutNav">
         <a className={startOpened ? "headerNavLink activeAbNL" : "headerNavLink"} onClick={openStart}>

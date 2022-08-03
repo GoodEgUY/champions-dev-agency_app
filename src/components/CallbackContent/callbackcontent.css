@@ -1,0 +1,13 @@
+.callbackContent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+.windowCallbackBody {
+    margin-left: 100px;
+    border-radius: 10px;
+    background-color: #282FD2;
+    width: 432px;
+    padding: 35px;
+}

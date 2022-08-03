@@ -4,9 +4,7 @@ import ModalAboutService from "./ModalAboutService";
 
 const DevServices = () => {
   const [aboutServiceOpened, setAboutServiceOpened] = useState(false)
-  const closeModal = () => {
-    setAboutServiceOpened(false);
-  }
+ 
   return (
     
       <div className="landingPageService">

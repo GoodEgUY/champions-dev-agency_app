@@ -1,0 +1,134 @@
+.introContent {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+
+.introText {
+    color: #2C2C2C;
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    width: 634px;
+}
+
+
+
+.introTitle {
+    color: #2C2C2C;
+    margin: 20px 0;
+    font-size: 50px;
+    font-family: Noah-700;
+    
+}
+.introTitle span {
+    color: #FBB83E;
+    border-radius: 5px;
+    background-image: url(../../../public/images/captureBorder.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.introParag {
+    margin: 0;
+}
+
+.callbackBtn {
+    cursor: pointer;
+    margin-top: 70px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 280px;
+    height: 75px;
+    background-color: #282FD2;
+    border: 1px solid #282FD2;
+    transition: all .2s ease-in-out;  
+    border-radius: 3px;  
+}
+.callbackBtn:hover {
+    color: #282FD2;
+    background-color: #EEF1FC ;
+}
+.introImage {
+    position: relative;
+
+    width: 494px;
+    height: 693px;
+}
+.introImages {
+    
+    background-position: center;
+    width: 494px;
+    height: 693px;
+    position: relative;
+}
+.telImage {
+    position: absolute;
+    left: 160px;
+    animation: livitation 5s infinite ;
+    animation-delay: 3s;
+}
+.noteImage {
+    position: absolute;
+    left: 0;
+    bottom: 170px;
+    animation: livitation 5s infinite;
+}
+.pcImage {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    animation: livitation 5s infinite ;
+    animation-delay: 1.5s;
+} 
+
+
+@keyframes livitation {
+    0% {
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-9px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-9px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-device-width: 1367px) {
+    .introContent {
+        
+    }
+    .introImages {
+            width: 394px;
+            height: 543px;
+            position: relative;
+    }
+    .introImage {
+        width: 394px;
+        height: 553px;
+    }
+    .telImage {
+        width: 43px;
+        height: 80px;
+        left: 130px;
+    }
+    .noteImage {
+        width:65px ;
+        height: 80px;
+        bottom: 120px;
+    }
+    .pcImage {
+       width:80px;
+       height: 82px;
+    } 
+}

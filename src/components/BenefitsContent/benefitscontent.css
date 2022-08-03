@@ -1,0 +1,74 @@
+.benefitsLogo {
+    
+    transform: translateX(-36px)translateY(110px);
+    margin-right: 29px;
+    width: 373px;
+    height: 490px;
+    
+}
+.benefitsContent {
+    padding: 100px 0;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.benefitsTitle {
+    width: 722px;
+    
+    display: flex;
+    flex-direction:column;
+    
+}
+.benefitsTitle h3 {
+    color: #2C2C2C;
+    font-size: 30px;
+    font-family: Noah-700;
+    margin-top: 0px;
+    margin-bottom:60px ;
+}
+.benefitsCartsFirst {
+    display: flex;
+    margin-bottom: 20px ;
+    
+}
+.benefitsCartsSecond {
+    
+    display: flex;
+}
+.benefitsCart {
+    color: #2C2C2C;
+    border: 1px solid white;
+    margin-right: 20px;
+    padding: 30px;
+    background-color: #f5f7fd;
+    border-radius: 10px;
+    text-align: left;
+    width: 350px;
+    transition: all .3s ease-in;
+}
+
+.benefitsCart:hover {
+    border-color: #282FD2;
+    background-color: #282FD2;
+    color: white;
+}
+.benefitsCart img {
+    margin-bottom: 10px;  
+} 
+.benefitsCart h5 {
+    
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}        
+.benefitsTitle p {
+    
+    margin: 0;
+    font-size: 18px;
+}
+.benefitsTitle h5 {
+    
+    font-size: 18px;
+    font-family: Noah-700;
+}

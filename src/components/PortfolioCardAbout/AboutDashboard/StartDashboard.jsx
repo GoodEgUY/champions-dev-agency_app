@@ -9,30 +9,30 @@ return(
           <div className="aboutDashboardNav">
             <div className="dashboardRow">
               <TabLink to="about">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Описание</p>
               </TabLink>
               <TabLink to="problem">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Проблема</p>
               </TabLink>
               <TabLink to="result">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Результаты</p>
               </TabLink>
             </div>
 
             <div className="dashboardRow">
               <TabLink to="goals">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Задачи</p>
               </TabLink>
               <TabLink to="time">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Время</p>
               </TabLink>
               <TabLink to="stages">
-                <img src="./images/dashboardnav.png" alt="" />
+                <img src="../images/dashboardnav.png" alt="" />
                 <p>Этапы</p>
               </TabLink>
             </div>
@@ -40,7 +40,7 @@ return(
           <div className="aboutDashboardScreen">
             <TabContent for="about">
               <img
-                src="./images/PortfolioCardsImages/happydelMiniLogo.png"
+                src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
               <p>
@@ -53,7 +53,7 @@ return(
             </TabContent>
             <TabContent for="result">
               <img
-                src="./images/PortfolioCardsImages/happydelMiniLogo.png"
+                src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
               <p>

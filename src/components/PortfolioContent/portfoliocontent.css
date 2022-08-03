@@ -1,0 +1,20 @@
+.portfolioContent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+.portfolioCarts {
+    
+    justify-content: center;
+    display: flex;
+}
+.portfolioTitle {
+    color: #2C2C2C;
+
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-family: Noah-700;
+}
