@@ -8,60 +8,33 @@ const Header = () => {
   return (
   <>
     <div className="header">
-      <div className="burgerHeader">
+      
+      <header>
+        <div className="burgerHeader">
+      <div className="logo">
+          <img src="../images/logo-ill.png" alt="Logo" className="partLogo" />
+          <img src="../images/logo.png" alt="Logo" className="partLogo" />
+        </div>
         <Link to="/">
-          <p> Главная</p>
+          <p className="headerNavLink">Главная</p>
         </Link>
         <Link to="/benefits">
-          <p> преймущества</p>
+          <p className="headerNavLink">Премущества</p>
         </Link>
         <Link to="/portfolio">
-          <p>портфолио</p>
+          <p className="headerNavLink">Портфолио</p>
         </Link>
         <Link to="/services">
-          <p>услуги</p>
-        </Link>
-        <Link to="/callback">
-          <p>заказать услугу</p>
+          <p className="headerNavLink">Услуги </p>
         </Link>
         <Link to="/team">
-          <p>Наша команда</p>
+          <p className="headerNavLink">Команда </p>
+        </Link>
+        <Link to="/callback">
+          <p className="headerNavLink">Связаться</p>
         </Link>
       </div>
-      <header>
-        {modalOpened ? (
-          <ModalContact
-            closeModal={() => {
-              setModalOpened(false);
-            }}
-          />
-        ) : null}
-        <div className="logo">
-          <img src="./images/logo-ill.png" alt="Logo" className="partLogo" />
-          <img src="./images/logo.png" alt="Logo" className="partLogo" />
-        </div>
-        <div className="headerNav">
-          <a href="/" className="headerNavLink">
-            Портфолио
-          </a>
-          <a href="/services" className="headerNavLink">
-            Услуги
-          </a>
-          <a href="/about" className="headerNavLink">
-            О компании
-          </a>
-          <a href="/vacancies" className="headerNavLink">
-            Вакансии
-          </a>
-        </div>
-        <button
-          className="contactBtn"
-          onClick={() => {
-            setModalOpened(true);
-          }}
-        >
-          СВЯЗАТЬСЯ
-        </button>
+        
       </header>
     </div>
     </>

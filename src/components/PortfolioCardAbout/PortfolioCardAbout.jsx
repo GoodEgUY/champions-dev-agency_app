@@ -35,15 +35,15 @@ const PortfolioCardAbout = () => {
         <Link to="/portfolio">Назад</Link>
       </div>
       <div className="portfolioAboutNav">
-        <a className={startOpened ? "headerNavLink activeAbNL" : "headerNavLink"} onClick={openStart}>
+        <p className={startOpened ? "aboutPortfolioNavLink activeAbNL" : "aboutPortfolioNavLink"} onClick={openStart}>
           Начало продукта
-        </a>
-        <a  className={UxProject ? "headerNavLink activeAbNL" : "headerNavLink"} onClick={openUxProject}>
+        </p>
+        <p  className={UxProject ? "aboutPortfolioNavLink activeAbNL" : "aboutPortfolioNavLink"} onClick={openUxProject}>
           UX проектирование
-        </a>
-        <a className={UiVisual ? "headerNavLink activeAbNL" : "headerNavLink"} onClick={openUiVisual}>
+        </p>
+        <p className={UiVisual ? "aboutPortfolioNavLink activeAbNL" : "aboutPortfolioNavLink"} onClick={openUiVisual}>
           UI визуализация
-        </a>
+        </p>
       </div>
       {startOpened ?<StartDashboard/> : null}
       {UxProject ? <div>testt</div> : null}

@@ -1,13 +1,15 @@
 header {
-    padding: 40px 0;
+    
+    padding: 40px;
     justify-content: space-between;
     display: flex;
     align-items: center;
 }
 
-.burgerHeader {
+.header {
+    z-index: 4;
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     width: 300px;
     background-color: #EEF1FC;
@@ -16,10 +18,13 @@ header {
     right: 0;
 }
 
-;
+.burgerHeader a {
 
+    text-decoration: none;
+}
 
 .logo {
+    margin-bottom: 40px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -36,7 +41,10 @@ header {
 
 
 .headerNavLink {
-    margin-right: 30px;
+    
+    margin-top: 0;
+    margin-bottom: 15px;
+    
     font-size: 18px;
     color: #2C2C2C;
     text-decoration: none;
@@ -45,6 +53,7 @@ header {
 }
 
 .headerNavLink:hover {
+    transform: translateX(30px);
     color: #282FD2;
 }
 
@@ -54,9 +63,9 @@ header {
     content: "";
     display: block;
     position: absolute;
-    margin-left: 10px;
-    bottom: -15px;
-    left: 50%;
+    
+    top: 10px;
+    left: -15px;
     width: 5px;
     height: 5px;
     background-color: #282FD2;
@@ -73,8 +82,8 @@ header {
     content: "";
     display: block;
     position: absolute;
-    bottom: -17px;
-    left: 40%;
+    top: 7px;
+    left: -30px;
     width: 10px;
     height: 10px;
     background-color: #282FD2;

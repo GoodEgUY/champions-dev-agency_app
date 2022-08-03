@@ -19,6 +19,7 @@
     transform: rotateY(180deg);
 }
 .portfolioAboutNav {
+    display: flex;
     margin-bottom: 40px;
 }
 .portfolioAboutNav a {
@@ -84,7 +85,7 @@
 }
 
 .activeAbNL {
-    color: #282FD2;
+    color: #282FD2!important;
 }
 .activeAbNL::before {
     align-items: center;
@@ -98,7 +99,7 @@
     width: 5px;
     height: 5px;
     background-color: #282FD2;
-    transform: scale(1);
+    transform: scale(1) !important;
     
 }
 
@@ -112,6 +113,55 @@
     width: 10px;
     height: 10px;
     background-color: #282FD2;
-    transform: scale(1);
+    transform: scale(1) !important;
     
+}
+
+.aboutPortfolioNavLink {
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+    text-decoration: none;
+    color: #2C2C2C;
+    font-size:18px ;
+    margin-right: 30px;
+}
+.aboutPortfolioNavLink:hover {
+    color: #282FD2;
+}
+.aboutPortfolioNavLink::before {
+    align-items: center;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    bottom: -15px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #282FD2;
+    transform: scale(0);
+    transition: transform .4s ease-in;
+}
+.aboutPortfolioNavLink:hover::before {
+    transform: scale(1);
+}
+.aboutPortfolioNavLink::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -17px;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    background-color: #282FD2;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.aboutPortfolioNavLink:hover::after {
+    transform: scale(1);
 }
