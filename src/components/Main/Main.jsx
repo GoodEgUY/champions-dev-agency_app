@@ -1,5 +1,6 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {Routes, Route } from "react-router-dom";
+import Media from "react-media";
 
 // 1 stage pages
 import IntroContent from "../IntroContent/IntroContent";
@@ -15,9 +16,23 @@ import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
 import Header from "../Header/Header";
 
 const Main = () => {
+  
   return (
+    
     <>
-      <Header />
+    <Media queries={{
+          small: "(max-width: 600px)",
+          medium: "(min-width: 800px) and (max-width: 1400px)",
+          large: "(min-width: 1400px)"
+        }}>
+          {matches => (
+           <Fragment>
+              {matches.small && <p>mobile all</p>}
+              {matches.medium && <p>laptop app</p>}
+              {matches.large && <Header/>}
+           </Fragment>
+          )}
+        </Media>
       <div className="content">
         
         
