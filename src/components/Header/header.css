@@ -7,7 +7,7 @@ header {
 }
 
 .header {
-    
+    border-left: 1px solid #D8E7F3;
     z-index: 4;
     display: flex;
     text-align: left;
@@ -122,6 +122,10 @@ header {
     transform: scale(1);
 }
 .headerLaptopContacs {
+    width: 100%;
+    border-top: 1px solid #d8e7f3;
+    
+    padding-top: 30px;
     flex-direction: column;
     display: flex;
     justify-content: center;

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ModalContact from "../ModalContact/ModalContact";
 import "./header.css";
+import ModalVacancies from "../ModalVacancies/ModalVacancies";
 
 const Header = () => {
   const [modalOpened, setModalOpened] = useState(false);
   return (
     <>
-    {modalOpened ? <ModalContact closeModal={() => setModalOpened(false)}/> : null}
+    {modalOpened ? <ModalVacancies closeModal={() => setModalOpened(false)}/> : null}
       <div className="header">
         <header>
           <div className="burgerHeader">
@@ -91,7 +92,7 @@ const Header = () => {
                 <p className="headerNavLink">Команда</p>
               </div>
             </NavLink>
-            <NavLink to="/callback">
+            {/* <NavLink to="/callback">
               <div className="headerLaptopNavItem">
                 <svg
                   width="24"
@@ -105,7 +106,7 @@ const Header = () => {
 
                 <p className="headerNavLink">О компании</p>
               </div>
-            </NavLink>
+            </NavLink> */}
           </div>
           <div className="headerLaptopContacs">
             <div className="headerLaptopNavItem">
@@ -124,7 +125,7 @@ const Header = () => {
 
               <p className="headerNavLink">Контакты</p>
             </div>
-            <div className="headerLaptopNavItem">
+            <div className="headerLaptopNavItem" onClick={() => setModalOpened(true)}>
               <svg
                 width="20"
                 height="16"

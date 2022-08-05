@@ -1,0 +1,99 @@
+.modalVacanciesBody {
+    width: 580px;
+    position: relative;
+    background-color: #282FD2;
+    padding: 35px;
+    border-radius: 10px;
+    animation: fade .4s running;
+    
+}
+
+
+.vacanciesFormContent {
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vacanciesFormContent h4 {
+    font-family: Noah-700;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.vacanciesFormContent p {
+    font-family: Noah-400;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.inputRowVacancies {
+    display: flex;
+    justify-content: space-between;
+}
+.mg-r-10 {
+    margin-right: 10px;
+}
+.dragAndDropZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../public/images/dashedBorder.png) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+}
+.dragTitle  {
+    width: 258px;
+   
+}
+.dragTitle p {
+    font-size: 18px;
+    color: #fff;
+}
+.vacanciesModalBtn {
+    font-family: Noah-700;
+    cursor: pointer;
+    border: 1px solid #FBB83E;
+    color: white;
+    width: 100%;
+    height: 75px;
+    background-color: #FBB83E;
+    
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.vacanciesModalBtn:hover {
+    background-color: #282FD2;
+    color: #FBB83E;
+}
+
+.policyTitle {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.policyTitle a {
+    text-decoration: none;
+    color: #FBB83E;
+}
+
+.policyTitle a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
