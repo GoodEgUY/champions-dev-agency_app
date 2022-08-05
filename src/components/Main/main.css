@@ -1,3 +1,10 @@
 .content {
-    scroll-behavior: smooth;
+    width: 1180px;
+   
+}
+.screenContent {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
 }

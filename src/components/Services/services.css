@@ -6,6 +6,7 @@
     align-items: center;
 }
 .servicesContent h3 {
+    margin-top: 0;
     text-align: center;
     color: #2C2C2C;
     font-size: 30px;
