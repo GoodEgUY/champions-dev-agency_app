@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../public/images/dashedBorder.png) ;
+    /* background-image: url(../../../public/images/dashedBorder.png) ; */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
