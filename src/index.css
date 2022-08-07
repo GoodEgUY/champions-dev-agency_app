@@ -25,8 +25,11 @@
 * {
   box-sizing: border-box;
 }
-
+ol {
+  margin: 0;
+}
 li {
+  margin-bottom: 5px;
   font-size: 18px;
   
 }

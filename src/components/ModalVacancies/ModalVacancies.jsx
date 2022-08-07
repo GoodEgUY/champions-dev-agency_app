@@ -113,9 +113,9 @@ const ModalVacancies = (props) => {
                 <img src="./images/drag.png" alt="Cloud" />
                 <input {...getInputProps()} />
                 <aside>{thumbs}</aside>
-                <div>
+                <p>
                   Перетащите мышкой резюме в окно или нажмите на облочко
-                </div>
+                </p>
                 <p></p>
               </div>
             </div>

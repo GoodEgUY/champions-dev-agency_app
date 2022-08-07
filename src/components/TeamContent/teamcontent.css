@@ -53,3 +53,9 @@
     font-size: 18px;
     margin: 0;
 }
+
+@media (max-device-width: 1367px) {
+    .teamContent {
+        padding: 50px 0;
+    }
+}

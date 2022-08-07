@@ -18,3 +18,8 @@
     font-size: 30px;
     font-family: Noah-700;
 }
+@media (max-device-width: 1367px) {
+    .portfolioContent {
+        padding: 50px 0;
+    }
+}

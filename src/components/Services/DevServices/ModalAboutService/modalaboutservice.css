@@ -1,0 +1,14 @@
+.aboutServiceFormContent {
+    width: 586px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.modalAboutServiceBody {
+    position: relative;
+    background-color: #282FD2;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fade .4s running;
+}

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./devservices.css";
-import ModalAboutService from "./ModalAboutService";
+import ModalAboutService from "./ModalAboutService/ModalAboutService";
 
 const DevServices = () => {
   const [aboutServiceOpened, setAboutServiceOpened] = useState(false)

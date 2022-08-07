@@ -111,3 +111,8 @@
     background-color: #f5f7fd;
     color: #FBB83E;
 }
+@media (max-device-width: 1367px) {
+    .servicesContent {
+        padding: 50px 0;
+    }
+}

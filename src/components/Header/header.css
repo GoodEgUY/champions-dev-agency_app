@@ -49,7 +49,7 @@ header {
 .headerNavLink {
     
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     
     font-size: 14px;
     color: #2C2C2C;
@@ -70,11 +70,7 @@ header {
     display: block;
     position: absolute;
     top: 23px;
-<<<<<<< HEAD
-    left: 33px;
-=======
-    left: 35px;
->>>>>>> 14a93ea27861669dd4708a550724cd15ef0d982c
+    left: 36px;
     width: 5px;
     height: 5px;
     background-color: #282FD2;
@@ -90,7 +86,7 @@ header {
     display: block;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 21px;
     width: 10px;
     height: 10px;
     background-color: #282FD2;
@@ -113,7 +109,7 @@ header {
 }
 .active p {
     
-    margin-bottom: 15px ;
+    margin-bottom: 30px ;
     color: #282FD2;
 }
 .active p::after {
