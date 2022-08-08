@@ -37,25 +37,7 @@
 .mg-r-10 {
     margin-right: 10px;
 }
-.dragAndDropZone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url(../../../public/images/dashedBorder.png) ; */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    width: 100%;
-    height: 180px;
-}
-.dragTitle  {
-    width: 258px;
-   
-}
-.dragTitle p {
-    font-size: 18px;
-    color: #fff;
-}
+
 .vacanciesModalBtn {
     font-family: Noah-700;
     cursor: pointer;

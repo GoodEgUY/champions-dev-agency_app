@@ -1,0 +1,83 @@
+.dragAndDropZone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+}
+.dragTitle  {
+    width: 258px;
+}
+
+.dragEmpty {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+}
+.dragEmpty p {
+    margin: 0;
+    
+    font-size: 18px;
+    color: #fff;
+}
+
+.dragHover {
+    background-color: rgba(255, 255, 255, 0.13);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dragHover p {
+    font-size: 18px;
+    color: rgb(197, 197, 197);
+}
+
+.cloudImg {
+    
+    animation: Cloud 2s infinite ;
+}
+.dragMaster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+@keyframes Cloud {
+    0%{
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px) ;
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+
+
+}   
