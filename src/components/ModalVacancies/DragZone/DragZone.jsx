@@ -2,32 +2,10 @@ import React, { useState } from "react";
 import "./dragzone.css";
 import axios from "axios";
 
-const DragZone = () => {
+const DragZone = (props) => {
   const [drag, setDrag] = useState(false);
 
-  // const onDrop = useCallback((acceptedFiles) => {
-  //     setFiles(
-  //       acceptedFiles.map((file) =>
-  //         Object.assign(file, {
-  //           preview: URL.createObjectURL(file),
-  //         })
-  //       )
-  //     );
-  //   }, []);
-
-  //   const thumbs = files.map((file) => (
-  //     <div key={file.name}>
-  //       <img src={file.preview} alt={file.name} width={170}/>
-  //     </div>
-  //   ));
-
-  //   // clean up
-  //   useEffect(
-  //     () => () => {
-  //       files.forEach((file) => URL.revokeObjectURL(file.preview));
-  //     },
-  //     [files]
-  //   );
+ 
   function dragStartHandler (e) {
     e.preventDefault();
     setDrag(true);
@@ -43,7 +21,7 @@ const DragZone = () => {
     let files = [...e.dataTransfer.files];
     const formData = new FormData()
     formData.append('file',files[0])
-    axios.post('/', formData,{})
+    
     console.log(files);
     setDrag(false);
   }
@@ -69,8 +47,10 @@ const DragZone = () => {
       onDragOver={(e) => dragStartHandler(e)}
       onDrop={(e) => onDropHandler(e)}
       
-      ></div>
+      ></div> 
+      
     </div>
+   
   );
 };
 

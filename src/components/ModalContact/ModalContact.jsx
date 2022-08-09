@@ -3,6 +3,11 @@ import "./modalcontact.css";
 
 
 const ModalContact = (props) => {
+
+  function sendAlert(e) {
+    e.preventDefault();
+    
+  }
   return (
   <div className="modalWrapper">
     <div className="modalBody">
