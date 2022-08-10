@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./modalvacancies.css";
 import "./DragZone/dragzone.css";
 import axios from "axios";
@@ -13,6 +13,7 @@ const ModalVacancies = (props) => {
   const urlApi = `https://api.telegram.org/bot${botToken}/sendDocument`;
   const chatId = "-1001526555815";
   const [success, setSuccess] = useState("");
+  const fileLoader = useRef(null);
 
   function dragStartHandler(e) {
     e.preventDefault();
@@ -32,8 +33,13 @@ const ModalVacancies = (props) => {
     setDrag(false);
   }
 
-  function dropFile (e) {
-    
+  function onLoadHandler(event) {
+    setFile(event.target.files[0]);
+    console.log(file);
+    setDrop(true);
+  }
+  function openFilePicker () {
+    fileLoader.current.click();
   }
   const sendAlert = (e) => {
     e.preventDefault();
@@ -125,14 +131,23 @@ const ModalVacancies = (props) => {
                   </p>
                 </div>
               )}
-
-              <div 
-                className="dragMaster"
-                onDragStart={(e) => dragStartHandler(e)}
-                onDragLeave={(e) => dragLeaveHandler(e)}
-                onDragOver={(e) => dragStartHandler(e)}
-                onDrop={(e) => onDropHandler(e)}
-              ></div>
+              
+                <input
+                  ref={fileLoader}
+                  type="file"
+                  name="files"
+                  onChange={(event) => onLoadHandler(event)}
+                  className="fileInput"
+                />
+                <div
+                onClick={openFilePicker}
+                  className="dragMaster"
+                  onDragStart={(e) => dragStartHandler(e)}
+                  onDragLeave={(e) => dragLeaveHandler(e)}
+                  onDragOver={(e) => dragStartHandler(e)}
+                  onDrop={(e) => onDropHandler(e)}
+                ></div>
+              
             </div>
             <button className="vacanciesModalBtn">ОТПРАВИТЬ</button>
           </form>

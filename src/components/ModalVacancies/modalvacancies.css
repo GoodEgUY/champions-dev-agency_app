@@ -67,6 +67,10 @@
     color: #FBB83E;
 }
 
+.fileInput {
+    height: 0px;
+}
+
 .policyTitle {
     margin-top: 10px;
     font-size: 14px;
