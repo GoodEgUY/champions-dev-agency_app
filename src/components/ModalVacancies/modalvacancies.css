@@ -39,76 +39,9 @@
     margin-right: 10px;
 }
 
-.select-css {
-    display: block;
-    font-size: 18px;
-    font-family: Noah-400;
-    
-    color: rgb(112, 112, 112);
-    
-    padding: 15px;
-    width: 100%;
-    max-width: 100%;
-    height: 55px;
-    border: none;
-    
-    
-    
-    border-radius: 5px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0L0 6L1.41 7.41L6 2.83L10.59 7.41L12 6L6 0Z' fill='%239A9A9A'/%3E%3C/svg%3E");
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    
-}
 
-.select-css::-ms-expand {
-    display: none;
-}
 
-.select-css:hover {
-    border-color: #888;
-}
 
-.select-css:focus {
-    
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0L0 6L1.41 7.41L6 2.83L10.59 7.41L12 6L6 0Z' fill='%23282FD2'/%3E%3C/svg%3E");
-    color: #222;
-    outline: none;
-}
-
-.select-css option {
-    margin-top: 10px;
-    font-weight: normal;
-
-}
-
-.select-css option:hover {
-    color: #282FD2;
-    background-color: #fff;
-}
-
-*[dir="rtl"] .select-css,
-:root:lang(ar) .select-css,
-:root:lang(iw) .select-css {
-    background-position: left .7em top 50%, 0 0;
-    
-}
-
-.fileList {
-    margin: 30px 0;
-    align-items: center;
-    display: flex;
-
-}
-
-.fileList p {
-    margin: 0;
-    font-size: 18px;
-}
 
 .vacanciesModalBtn {
     font-family: Noah-700;

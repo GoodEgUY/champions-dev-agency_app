@@ -2,12 +2,12 @@ import React, { useState, useRef } from "react";
 import "./modalvacancies.css";
 import "./DragZone/dragzone.css";
 import axios from "axios";
+import Select from "../Select/Select";
 
 const ModalVacancies = (props) => {
   const [clientName, setClientName] = useState("Не указано");
   const [clientPhone, setClientPhone] = useState("Не указано");
   const [clientTg, setClientTg] = useState("Не указано");
-  const [clientDo, setClientDo] = useState("Не указано");
   const [drag, setDrag] = useState(false);
   const [file, setFile] = useState([]);
   const [drop, setDrop] = useState(false);
@@ -17,6 +17,32 @@ const ModalVacancies = (props) => {
   const chatId = "-1001526555815";
   const [success, setSuccess] = useState("");
   const fileLoader = useRef(null);
+  // SELECT ZONE
+
+  const [selected, setSelected] = useState("Специальность");
+  const [anim, setAnim] = useState(false);
+  const [opened, setOpened] = useState(false);
+  const [focus, setFocus] = useState(false);
+
+  const dropdown = (e) => {
+    e.preventDefault();
+    setAnim(!anim);
+    setOpened(!opened);
+  };
+
+  const valueSelectF = () => {
+    setFocus(true);
+    setSelected("BackEnd Developer");
+    setOpened(false);
+    setAnim(false);
+  };
+  const valueSelectS = () => {
+    setFocus(true);
+    setSelected("Marketing");
+    setOpened(false);
+    setAnim(false);
+  };
+  // SELECT ZONE
 
   function dragStartHandler(e) {
     e.preventDefault();
@@ -52,7 +78,7 @@ const ModalVacancies = (props) => {
     message += `<b>Имя:</b> ${clientName}\n`;
     message += `<b>Телефон:</b> ${clientPhone}\n`;
     message += `<b>Телеграм:</b> ${clientTg}\n`;
-    message += `<b>Специальность:</b> <i>${clientDo}</i>`;
+    message += `<b>Специальность:</b> <i>${selected}</i>`;
     const formData = new FormData();
     formData.append("chat_id", chatId);
     formData.append("document", file);
@@ -114,34 +140,52 @@ const ModalVacancies = (props) => {
                     type="textr"
                     placeholder="Введите ваше имя"
                     className="mg-r-10"
-                    
                     onChange={(event) => setClientName(event.target.value)}
                   />
                   <input
                     type="tel"
                     placeholder="+XXX XXX XXX"
-                    
                     onChange={(event) => setClientPhone(event.target.value)}
                   />
                 </div>
                 <div className="inputRowVacancies">
-                  <select
-                    name="spec"
-                    placeholder="Специальность"
-                    className="select-css mg-r-10"
-                    value={clientDo}
-                    onChange={(event) => setClientDo(event.target.value)}
-                  >
-                    <option disabledv selected hidden value={"No info"}>
-                      Специальность
-                    </option>
-                    <option value={"marketManager"}>Marketing Manger</option>
-                    <option value={"backendDev"}>Back End Developer</option>
-                  </select>
+                  {/* SELECT ZONE */}
+                  <div className="select">
+                    <button
+                      className="dropdownSelect"
+                      onClick={(e) => dropdown(e)}
+                    >
+                      <p
+                        className={focus ? "selectedItem" : "selectedItem grey"}
+                      >
+                        {selected}
+                      </p>
+                      <svg
+                        className={anim ? "crossAnim" : ""}
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="#9A9A9A"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M6 0L0 6L1.41 7.41L6 2.83L10.59 7.41L12 6L6 0Z" />
+                      </svg>
+                    </button>
+                    {opened ? (
+                      <div className="dropdownMenu">
+                        <p className="dropdownItem1 " onClick={valueSelectF}>
+                          BackEnd
+                        </p>
+                        <p className="dropdownItem2" onClick={valueSelectS}>
+                          MArketing
+                        </p>
+                      </div>
+                    ) : null}
+                  </div>
+                  {/* SELECT ZONE */}
                   <input
                     type="text"
                     placeholder="Ник в телеграм"
-                    
                     onChange={(event) => setClientTg(event.target.value)}
                   />
                 </div>
