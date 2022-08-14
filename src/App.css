@@ -3,7 +3,35 @@
   max-height: 100vh;
 }
 
+.coming {
+  display:flex ;
+  flex-direction: column;
+  margin: 200px auto;
+  text-align: center;
+}
 
+.coming img {
+  margin-top: 30px;
+  animation: rotation 4s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateX(0);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotateX(0);
+  }
+  75% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .App {
   display: flex ;
   flex-direction: row-reverse;

@@ -4,6 +4,8 @@ import "./portfoliocardabout.css";
 import {Link } from "react-router-dom";
 import { useState } from "react";
 import StartDashboard from "./AboutDashboard/StartDashboard";
+import UxDashboard from "./AboutDashboard/UxDashboard";
+import UiDashboard from "./AboutDashboard/UiDashboard";
 
 const PortfolioCardAbout = () => {
 
@@ -46,8 +48,8 @@ const PortfolioCardAbout = () => {
         </p>
       </div>
       {startOpened ?<StartDashboard/> : null}
-      {UxProject ? <div>testt</div> : null}
-      {UiVisual ? <div>tesstr3</div> : null }
+      {UxProject ? <UxDashboard/> : null}
+      {UiVisual ? <UiDashboard/> : null }
     </div>
   );
 };

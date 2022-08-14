@@ -9,30 +9,30 @@ return(
           <div className="aboutDashboardNav">
             <div className="dashboardRow">
               <TabLink to="about">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon.png" alt="" />
                 <p>Описание</p>
               </TabLink>
               <TabLink to="problem">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon-1.png" alt="" />
                 <p>Проблема</p>
               </TabLink>
               <TabLink to="result">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon-2.png" alt="" />
                 <p>Результаты</p>
               </TabLink>
             </div>
 
             <div className="dashboardRow">
               <TabLink to="goals">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon-3.png" alt="" />
                 <p>Задачи</p>
               </TabLink>
               <TabLink to="time">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon-4.png" alt="" />
                 <p>Время</p>
               </TabLink>
               <TabLink to="stages">
-                <img src="../images/dashboardnav.png" alt="" />
+                <img src="../images/PortfolioCardsImages/Icons/Icon-5.png" alt="" />
                 <p>Этапы</p>
               </TabLink>
             </div>

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
 import "./main.css";
 import Media from "react-media";
 
@@ -18,19 +18,8 @@ import Header from "../Header/Header";
 const Main = () => {
   return (
     <>
-      {/* <Media queries={{
-          small: "(max-width: 600px)",
-          medium: "(min-width: 800px) and (max-width: 1400px)",
-          large: "(min-width: 1400px)"
-        }}>
-          {matches => (
-           <Fragment>
-              {matches.small && <p>mobile all</p>}
-              {matches.medium && <Header/>}
-              {matches.large && <Header/> }
-           </Fragment>
-          )}
-        </Media> */}
+<BrowserRouter>
+     
         <Header/>
       <div className="screenContent">
         <div className="content">
@@ -48,6 +37,7 @@ const Main = () => {
           </Routes>
         </div>
       </div>
+      </BrowserRouter>
     </>
   );
 };

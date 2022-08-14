@@ -1,0 +1,19 @@
+.headerTab{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerTab p {
+    margin: 0;
+}
+
+.fullscreen{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.fullscreen img {
+    
+margin-right: 10px;
+}
