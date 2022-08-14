@@ -20,7 +20,7 @@ function App() {
     }}>
       {matches => (
        <Fragment>
-          {matches.small && <div className="coming">Mobile Version "Champions" <br/> Coming soon...<img src="./Images/clockLoad.svg" height={32}></img></div>}
+          {matches.small && <div className="coming">Mobile Version "Champions" <br/> Coming soon...<img src="./images/clockLoad.svg" height={32}></img></div>}
           {matches.medium && <Main/>}
           {matches.large && <Main/> }
        </Fragment>
