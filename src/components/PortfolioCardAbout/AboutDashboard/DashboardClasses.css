@@ -17,3 +17,16 @@
     
 margin-right: 10px;
 }
+.dashboardTitle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.dashboardTitle p {
+    margin-top: 0;
+    display: block;
+    width: 248px;
+}
+.dashboardTitle img {
+    height: fit-content;
+}
