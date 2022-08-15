@@ -1,8 +1,149 @@
-import React from "react";
+import React, {useState} from "react";
 import { Tabs, TabContent, TabLink } from "react-tabs-redux";
+import FsLightbox from "fslightbox-react";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const UiDashboard = () => {
+  const [toggler1, setToggler1] = useState(false);
+  const [toggler2, setToggler2] = useState(false);
+  const [toggler3, setToggler3] = useState(false);
+  const [toggler4, setToggler4] = useState(false);
+  const [toggler5, setToggler5] = useState(false);
+  const [toggler6, setToggler6] = useState(false);
   return (
+    <>
+    <FsLightbox
+        toggler={toggler1}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3> Цвета</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap1.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+        
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
+      <FsLightbox
+        toggler={toggler2}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3> Типографика</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap2.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+        
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
+      <FsLightbox
+        toggler={toggler3}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3> Сетка</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap3.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+       
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
+      <FsLightbox
+        toggler={toggler4}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3> Ui-kit</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap4.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+        
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
+      <FsLightbox
+        toggler={toggler5}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3> Дизайн</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap5.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+        
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
+      <FsLightbox
+        toggler={toggler6}
+        sources={[<>
+          <div className="lightboxWrapper">
+            <h3>Видео</h3>
+          
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src="../images/PortfolioCardsImages/happyDel/Maps/UiMap6.jpg"
+                  alt=""
+                />
+              </TransformComponent>
+            </TransformWrapper>
+           
+          </div>
+           </>
+        ]}
+       
+        initialAnimation="scale-in-long"
+        slideChangeAnimation="none"
+      />
     <Tabs>
       <div className="aboutDashboard">
         <div className="aboutDashboardNav">
@@ -62,7 +203,8 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen"
+              onClick={() => setToggler1(!toggler1)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть фото</p>
               </div>
@@ -89,7 +231,8 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen"
+              onClick={() => setToggler2(!toggler2)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть фото</p>
               </div>
@@ -116,7 +259,7 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen" onClick={() => setToggler3(!toggler3)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть фото</p>
               </div>
@@ -142,7 +285,7 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen" onClick={() => setToggler4(!toggler4)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть фото</p>
               </div>
@@ -168,7 +311,7 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen" onClick={() => setToggler5(!toggler5)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть фото</p>
               </div>
@@ -194,7 +337,7 @@ const UiDashboard = () => {
                 src="../images/PortfolioCardsImages/happydelMiniLogo.png"
                 alt="Happy Del Logo"
               />
-              <div className="fullscreen">
+              <div className="fullscreen" onClick={() => setToggler6(!toggler6)}>
                 <img src="../images/fullscreen.png" alt="" />
                 <p>Открыть видео</p>
               </div>
@@ -214,6 +357,7 @@ const UiDashboard = () => {
         </div>
       </div>
     </Tabs>
+    </>
   );
 };
 

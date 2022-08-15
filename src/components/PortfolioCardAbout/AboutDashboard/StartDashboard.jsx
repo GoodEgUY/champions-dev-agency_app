@@ -1,14 +1,20 @@
 import React from "react";
+
 import { Tabs, TabContent, TabLink } from "react-tabs-redux";
 
 const StartDashboard = () => {
+
+  
   return (
     <Tabs>
       <div className="aboutDashboard">
         <div className="aboutDashboardNav">
           <div className="dashboardRow">
             <TabLink to="about">
-              <img src="../images/PortfolioCardsImages/happyDel/Icons/Icon.png" alt="" />
+              <img
+                src="../images/PortfolioCardsImages/happyDel/Icons/Icon.png"
+                alt=""
+              />
               <p>Описание</p>
             </TabLink>
             <TabLink to="problem">
@@ -57,7 +63,7 @@ const StartDashboard = () => {
               src="../images/PortfolioCardsImages/happydelMiniLogo.png"
               alt="Happy Del Logo"
             />
-            
+
             <p>
               Все начинается с идеи и в моей голове проснулось следующее. Это
               стартап мобильное приложение под android. Агрегатор доставки еды
@@ -66,7 +72,7 @@ const StartDashboard = () => {
             </p>
           </TabContent>
           <TabContent for="problem">
-          <img
+            <img
               src="../images/PortfolioCardsImages/happydelMiniLogo.png"
               alt="Happy Del Logo"
             />
@@ -76,6 +82,8 @@ const StartDashboard = () => {
               магазинов. Что в России плохо развиты услуги в конкретный
               бизнесов.
             </p>
+ 
+
           </TabContent>
           <TabContent for="result">
             <img
@@ -116,7 +124,7 @@ const StartDashboard = () => {
             </ol>
           </TabContent>
           <TabContent for="goals">
-          <img
+            <img
               src="../images/PortfolioCardsImages/happydelMiniLogo.png"
               alt="Happy Del Logo"
             />
@@ -136,7 +144,7 @@ const StartDashboard = () => {
             </p>
           </TabContent>
           <TabContent for="time">
-          <img
+            <img
               src="../images/PortfolioCardsImages/happydelMiniLogo.png"
               alt="Happy Del Logo"
             />
@@ -147,7 +155,7 @@ const StartDashboard = () => {
             </p>
           </TabContent>
           <TabContent for="stages">
-          <img
+            <img
               src="../images/PortfolioCardsImages/happydelMiniLogo.png"
               alt="Happy Del Logo"
             />

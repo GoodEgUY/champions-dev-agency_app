@@ -1,10 +1,8 @@
 import React, {Fragment} from "react";
 import Media from "react-media";
-import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Main from "./components/Main/Main";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
@@ -20,7 +18,7 @@ function App() {
     }}>
       {matches => (
        <Fragment>
-          {matches.small && <div className="coming">Mobile Version "Champions" <br/> Coming soon...<img src="./images/clockLoad.svg" height={32}></img></div>}
+          {matches.small && <Main/>}
           {matches.medium && <Main/>}
           {matches.large && <Main/> }
        </Fragment>

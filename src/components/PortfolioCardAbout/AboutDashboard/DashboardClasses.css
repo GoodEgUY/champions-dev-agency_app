@@ -30,3 +30,16 @@ margin-right: 10px;
 .dashboardTitle img {
     height: fit-content;
 }
+
+.lightboxWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lightboxWrapper h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
