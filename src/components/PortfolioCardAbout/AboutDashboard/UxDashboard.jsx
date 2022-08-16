@@ -86,7 +86,7 @@ const UxDashboard = () => {
            
           
             <TransformWrapper 
-            
+           
        >
               <TransformComponent>
                 <img
