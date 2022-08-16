@@ -85,7 +85,9 @@ const UxDashboard = () => {
           <div className="lightboxWrapper">
            
           
-            <TransformWrapper>
+            <TransformWrapper 
+            
+       >
               <TransformComponent>
                 <img
                   src="../images/PortfolioCardsImages/happyDel/Maps/UxMap4.jpg"

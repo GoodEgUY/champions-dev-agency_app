@@ -18,7 +18,7 @@ const UiDashboard = () => {
           <div className="lightboxWrapper">
             <h3> Цвета</h3>
           
-            <TransformWrapper>
+            <TransformWrapper >
               <TransformComponent>
                 <img
                   src="../images/PortfolioCardsImages/happyDel/Maps/UiMap1.jpg"

@@ -166,3 +166,12 @@
     transform: scale(1);
 }
 
+
+@media (max-device-width: 500px) {
+    .aboutDashboardNav {
+        
+    }
+    .aboutDashboard {
+        flex-wrap: wrap;
+    }
+}

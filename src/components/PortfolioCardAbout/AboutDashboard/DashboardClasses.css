@@ -34,7 +34,7 @@ margin-right: 10px;
 .lightboxWrapper {
     object-fit: contain;
     width: fit-content;
-    height: 800px;
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,19 @@ margin-right: 10px;
     font-size: 18px;
     color: #fff;
 }
-.react-transform-wrapper {
-    width: 1080px;
-    object-fit: contain;
+.lightboxWrapper img {
+    width: 100%;
+    height: auto;
 }
+
+
+.react-transform-wrapper {
+    
+    
+    
+    height: 80vh!important;
+    width: 80vw!important;
+    
+}
+
+
