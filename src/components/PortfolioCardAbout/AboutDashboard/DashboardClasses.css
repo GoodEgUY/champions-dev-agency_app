@@ -32,8 +32,8 @@ margin-right: 10px;
 }
 
 .lightboxWrapper {
-    height: 80vh;
-    width: 80vw;
+    
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,6 @@ margin-right: 10px;
 
 
 .transform-component-module_wrapper__1_Fgj {
-    min-height: auto;
-    max-height: 100%;
+    
 
 }

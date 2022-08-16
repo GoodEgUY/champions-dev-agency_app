@@ -80,6 +80,8 @@ const UxDashboard = () => {
         slideChangeAnimation="none"
       />
       <FsLightbox
+      initialAnimation="none"
+      slideChangeAnimation="none"
         toggler={toggler4}
         sources={[<>
           <div className="lightboxWrapper">
@@ -100,8 +102,8 @@ const UxDashboard = () => {
            </>
         ]}
         
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
+        
+        
       />
       <FsLightbox
         toggler={toggler5}
