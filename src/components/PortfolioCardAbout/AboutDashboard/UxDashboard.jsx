@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Tabs, TabContent, TabLink } from "react-tabs-redux";
+import ModalGallery from "./ModalGallery";
 import FsLightbox from "fslightbox-react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import "./DashboardClasses.css";
@@ -13,12 +14,10 @@ const UxDashboard = () => {
   const [toggler6, setToggler6] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler1}
-        sources={[<>
-          <div className="lightboxWrapper">
-           
-          
+      {toggler1 ? <ModalGallery
+        closeModal={() => setToggler1(false)}
+        content={
+          <>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -28,19 +27,13 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
             <h3>User Person</h3>
-          </div>
-           </>
-        ]}
+          </>}/> : null       
+        }
         
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler2}
-        sources={[<>
-          <div className="lightboxWrapper">
-            
-          
+  
+        {toggler2 ? <ModalGallery
+        closeModal={() => setToggler2(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -50,19 +43,11 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
            <h3> Site Map</h3>
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler3}
-        sources={[<>
-          <div className="lightboxWrapper">
-            
-          
+           </>}/> : null       
+        }
+      {toggler3 ? <ModalGallery
+        closeModal={() => setToggler3(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -72,24 +57,12 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
            <h3> Functional Map</h3>
-          </div>
-           </>
-        ]}
-       
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-      initialAnimation="none"
-      slideChangeAnimation="none"
-        toggler={toggler4}
-        sources={[<>
-          <div className="lightboxWrapper">
-           
-          
-            <TransformWrapper 
-           
-       >
+           </>}/> : null       
+        }
+      {toggler4 ? <ModalGallery
+        closeModal={() => setToggler4(false)}
+        content={<>
+          <TransformWrapper>
               <TransformComponent>
                 <img
                   src="../images/PortfolioCardsImages/happyDel/Maps/UxMap4.jpg"
@@ -98,19 +71,13 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
             <h3> Impact Map</h3>
-          </div>
-           </>
-        ]}
-        
-        
-        
-      />
-      <FsLightbox
-        toggler={toggler5}
-        sources={[<>
-          <div className="lightboxWrapper">
-           
-          
+      
+          </>}/> : null       
+        }
+      
+      {toggler5 ? <ModalGallery
+        closeModal={() => setToggler5(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -120,19 +87,11 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
             <h3> User Flow</h3>
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler6}
-        sources={[<>
-          <div className="lightboxWrapper">
-           
-          
+            </>}/> : null       
+        }
+      {toggler6 ? <ModalGallery
+        closeModal={() => setToggler6(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -142,14 +101,8 @@ const UxDashboard = () => {
               </TransformComponent>
             </TransformWrapper>
             <h3> Lean Canvas</h3>
-          </div>
-           </>
-        ]}
-       
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      
+            </>}/> : null       
+        }
 
       <Tabs>
         <div className="aboutDashboard">

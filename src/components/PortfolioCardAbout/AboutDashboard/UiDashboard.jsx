@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Tabs, TabContent, TabLink } from "react-tabs-redux";
-import FsLightbox from "fslightbox-react";
+import ModalGallery from "./ModalGallery";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const UiDashboard = () => {
@@ -12,12 +12,9 @@ const UiDashboard = () => {
   const [toggler6, setToggler6] = useState(false);
   return (
     <>
-    <FsLightbox
-        toggler={toggler1}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3> Цвета</h3>
-          
+     {toggler1 ? <ModalGallery
+        closeModal={() => setToggler1(false)}
+        content={<>
             <TransformWrapper >
               <TransformComponent>
                 <img
@@ -26,19 +23,13 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler2}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3> Типографика</h3>
+            <h3> Цвета</h3>
+            </>}/> : null       
+        }
+      {toggler2 ? <ModalGallery
+        closeModal={() => setToggler2(false)}
+        content={<>
+            
           
             <TransformWrapper>
               <TransformComponent>
@@ -48,20 +39,12 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler3}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3> Сетка</h3>
-          
+           <h3> Типографика</h3>
+           </>}/> : null       
+        }
+      {toggler3 ? <ModalGallery
+        closeModal={() => setToggler3(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -70,19 +53,13 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-       
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler4}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3> Ui-kit</h3>
+           <h3> Сетка</h3>
+           </>}/> : null       
+        }
+    
+    {toggler4 ? <ModalGallery
+        closeModal={() => setToggler4(false)}
+        content={<>
           
             <TransformWrapper>
               <TransformComponent>
@@ -92,20 +69,13 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler5}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3> Дизайн</h3>
-          
+           <h3> Ui-kit</h3>
+           </>}/> : null       
+        }
+    
+    {toggler5 ? <ModalGallery
+        closeModal={() => setToggler5(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -114,20 +84,12 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-        
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
-      <FsLightbox
-        toggler={toggler6}
-        sources={[<>
-          <div className="lightboxWrapper">
-            <h3>Видео</h3>
-          
+           <h3> Дизайн</h3>
+           </>}/> : null       
+        }
+       {toggler6 ? <ModalGallery
+        closeModal={() => setToggler6(false)}
+        content={<>
             <TransformWrapper>
               <TransformComponent>
                 <img
@@ -136,14 +98,9 @@ const UiDashboard = () => {
                 />
               </TransformComponent>
             </TransformWrapper>
-           
-          </div>
-           </>
-        ]}
-       
-        initialAnimation="scale-in-long"
-        slideChangeAnimation="none"
-      />
+           <h3>Видео</h3>
+           </>}/> : null       
+        }
     <Tabs>
       <div className="aboutDashboard">
         <div className="aboutDashboardNav">
