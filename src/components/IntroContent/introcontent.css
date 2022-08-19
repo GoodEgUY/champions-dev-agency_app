@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     padding: 100px 0;
+    margin: 0 auto;
 }
 
 
@@ -67,20 +68,20 @@
 }
 .telImage {
     position: absolute;
-    left: 160px;
+    left: 70px;
     animation: livitation 5s infinite ;
     animation-delay: 3s;
 }
 .noteImage {
     position: absolute;
-    left: 0;
-    bottom: 170px;
+    left: -40px;
+    bottom: 110px;
     animation: livitation 5s infinite;
 }
 .pcImage {
     position: absolute;
-    bottom: 0;
-    right: 10px;
+    bottom: 20px;
+    right: 0;
     animation: livitation 5s infinite ;
     animation-delay: 1.5s;
 } 
@@ -108,25 +109,32 @@
     
     .introImages {
             width: 394px;
-            height: 543px;
+            height: 451px;
             position: relative;
     }
     .introImage {
-        width: 394px;
-        height: 553px;
+        width: 370px;
+        height: 520px;
     }
     .telImage {
-        width: 43px;
-        height: 80px;
-        left: 130px;
+        width: 72px;
+        height: 72px;
+       
     }
     .noteImage {
-        width:65px ;
-        height: 80px;
-        bottom: 120px;
+        width:96px ;
+        height: 97px;
+        bottom: 50px;
     }
     .pcImage {
-       width:80px;
-       height: 82px;
+        right: 30px;
+        bottom: -30px;
+       width:50px;
+       height: 50px;
+    }
+    .introContent {
+        width: 980px;
+        height: 463px;
+        padding: 0;
     } 
 }

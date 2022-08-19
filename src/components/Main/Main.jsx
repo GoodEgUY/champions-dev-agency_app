@@ -11,8 +11,10 @@ import Services from "../Services/Services";
 import CallbackContent from "../CallbackContent/CallbackContent";
 import TeamContent from "../TeamContent/TeamContent";
 
+
 // 2 stage pages
-import PortfolioCardAbout from "../PortfolioCardAbout/PortfolioCardAbout";
+import HappyDelAbout from "../PortfolioCartAbout/HappyDelAbout";
+import HelpPointAbout from "../PortfolioCartAbout/HelpPointAbout";
 import Header from "../Header/Header";
 
 const Main = () => {
@@ -32,8 +34,12 @@ const Main = () => {
             <Route path="/team" element={<TeamContent />} />
             <Route
               path="/portfolio/happy-del"
-              element={<PortfolioCardAbout />}
+              element={<HappyDelAbout />}
             />
+            <Route
+            path="/portfolio/helppoint"
+            element={<HelpPointAbout />}
+          />
           </Routes>
         </div>
       </div>

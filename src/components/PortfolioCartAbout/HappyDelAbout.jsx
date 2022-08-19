@@ -3,9 +3,9 @@ import "./portfoliocardabout.css";
 
 import {Link } from "react-router-dom";
 import { useState } from "react";
-import StartDashboard from "./AboutDashboard/StartDashboard";
-import UxDashboard from "./AboutDashboard/UxDashboard";
-import UiDashboard from "./AboutDashboard/UiDashboard";
+import StartDashboard from "./AboutHappyDelDashboard/StartDashboard";
+import UxDashboard from "./AboutHappyDelDashboard/UxDashboard";
+import UiDashboard from "./AboutHappyDelDashboard/UiDashboard";
 
 const PortfolioCardAbout = () => {
 
@@ -32,11 +32,12 @@ const PortfolioCardAbout = () => {
   }
   return (
     <div className="portfolioItemContent">
-      <div className="backToMain">
+      
+      <div className="portfolioAboutNav">
+        <div className="backToMain">
         <img src="../images/PortfolioCardsImages/arrows/arrowBlack.png" alt="" />
         <Link to="/portfolio">Назад</Link>
       </div>
-      <div className="portfolioAboutNav">
         <p className={startOpened ? "aboutPortfolioNavLink activeAbNL" : "aboutPortfolioNavLink"} onClick={openStart}>
           Начало продукта
         </p>

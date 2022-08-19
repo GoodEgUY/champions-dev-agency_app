@@ -36,9 +36,9 @@ const IntroContent = () => {
             alt="SergeyRomanov"
             className="introImage"
           />
-          <img src="./images/telapp.png" alt="" className="telImage" />
-          <img src="./images/note.png" alt="" className="noteImage" />
-          <img src="./images/pc.png" alt="" className="pcImage" />
+          <img src="./images/pizza.png" alt="" className="telImage" />
+          <img src="./images/Rolls.png" alt="" className="noteImage" />
+          <img src="./images/burger.png" alt="" className="pcImage" />
         </div>
       </div>
     </>

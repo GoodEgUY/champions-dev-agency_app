@@ -13,12 +13,12 @@ const PortfolioContent = () => {
       url: "/portfolio/happy-del",
     },
     {
-      name: "Helpoint",
+      name: "HelpPoint",
       title:
         "Сервис психологической онлайн помощи. Редизайн всего веб сайта, улучшенное юзабилити.",
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard2.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard2Hover.png",
-      url: "/happy-del",
+      url: "/portfolio/helppoint",
     },
   ];
   return (

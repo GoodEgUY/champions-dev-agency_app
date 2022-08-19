@@ -39,7 +39,10 @@ header {
     flex-direction: column;
     
 }
-
+.partLogo {
+    width: 60px;
+    height: 85px;
+}
 .headerNav {
     display: flex;
 
@@ -136,6 +139,37 @@ header {
 
 
 
+@media (max-device-width: 1367px) {
+    header {
+        padding: 20px 0;
+    }
+    .header {
+        width: 90px;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .partLogo {
+        width: 48px;
+        height: 66px;
+    }
+    .headerNavLink {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .active p {
+        margin-bottom: 20px ;
+    }
+    .headerLaptopContacs {
+        padding-top: 20px;
+    }
+    .headerNavLink::before {
+        left: 30px ;
+    }
+    .headerNavLink::after {
+        left: 15px;
+    }
+}
 
 
 /* .contactBtn {
