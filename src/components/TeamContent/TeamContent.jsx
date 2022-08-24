@@ -5,7 +5,7 @@ import "./teamcontent.css"
 const TeamContent = () => {
     return(
         <div className="teamContent">
-        <h3>Наша команда профессионалов мечты</h3>
+        <h3 className="contentTitle">Наша команда профессионалов мечты</h3>
         <div className="teamList">
           <div className="teamItem">
             <div className="teamItemImg">

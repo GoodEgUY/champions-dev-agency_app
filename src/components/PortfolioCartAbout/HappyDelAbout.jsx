@@ -32,8 +32,9 @@ const PortfolioCardAbout = () => {
   }
   return (
     <div className="portfolioItemContent">
-      
+      <h3 className="contentTitle">Подробно о портфолио champions</h3>
       <div className="portfolioAboutNav">
+        
         <div className="backToMain">
         <img src="../images/PortfolioCardsImages/arrows/arrowBlack.png" alt="" />
         <Link to="/portfolio">Назад</Link>

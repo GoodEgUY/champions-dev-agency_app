@@ -1,6 +1,8 @@
 .portfolioItemContent {
+    display: flex;
     
-    padding: 100px 0;
+    flex-direction: column;
+    
 }
 .backToMain a {
     color: #2C2C2C;
