@@ -46,6 +46,16 @@ a {
   text-decoration: none;
   
 } 
+h1,h2,h3,h4,h6 {
+  line-height: 32px;
+}
+h5 {
+  line-height: 24px;
+}
+p {
+  
+  line-height: 24px;
+}
 
 input {
     

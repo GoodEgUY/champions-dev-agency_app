@@ -16,7 +16,8 @@
     margin-right: 20px;
     background-color: #f5f7fd;
     width: 352px;
-    padding: 30px;
+    height: 244px;
+    padding: 32px;
 }
 .servicePrice {
     display: flex;

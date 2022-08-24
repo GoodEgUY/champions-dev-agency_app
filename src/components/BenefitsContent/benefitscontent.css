@@ -1,17 +1,28 @@
 .benefitsLogo {
     
-    transform: translateX(-36px)translateY(110px);
+    
     margin-right: 29px;
     width: 373px;
     height: 490px;
     
 }
 .benefitsContent {
-    padding: 100px 0;
     
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
+}
+.benefitsContent h3 {
+    color: #181A43;
+    font-size: 30px;
+    font-family: Noah-700;
+    margin-top: 0px;
+    margin-bottom:60px ;
+}
+.benefitsScreen {
+    display: flex;
+    justify-content: center;
 }
 .benefitsTitle {
     width: 722px;
@@ -21,7 +32,7 @@
     
 }
 .benefitsTitle h3 {
-    color: #2C2C2C;
+    color: #181A43;
     font-size: 30px;
     font-family: Noah-700;
     margin-top: 0px;
@@ -37,10 +48,10 @@
     display: flex;
 }
 .benefitsCart {
-    color: #2C2C2C;
+    
     border: 1px solid white;
     margin-right: 20px;
-    padding: 30px;
+    padding: 32px;
     background-color: #f5f7fd;
     border-radius: 10px;
     text-align: left;
@@ -71,4 +82,11 @@
     
     font-size: 18px;
     font-family: Noah-700;
+}
+
+
+@media (max-device-width: 1367px) {
+    .benefitsContent h3 {
+        display: none;
+    }
 }

@@ -8,6 +8,7 @@
 
 
 .introText {
+    
     color: #2C2C2C;
     display:flex;
     flex-direction: column;
@@ -18,9 +19,10 @@
 
 
 .introTitle {
-    color: #2C2C2C;
-    margin: 20px 0;
-    font-size: 50px;
+    line-height: 48px;
+    color: #181A43;
+    margin: 0;
+    font-size: 40px;
     font-family: Noah-700;
     
 }
@@ -33,12 +35,17 @@
     
 }
 .introParag {
+    font-size: 22px;
+    width: 513px;
+    line-height: 32px;
     margin: 0;
+    margin-top: 24px;
+    color: #515151;
 }
 
 .callbackBtn {
     cursor: pointer;
-    margin-top: 70px;
+    margin-top: 48px;
     color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
@@ -47,7 +54,7 @@
     background-color: #282FD2;
     border: 1px solid #282FD2;
     transition: all .2s ease-in-out;  
-    border-radius: 3px;  
+    border-radius: 8px;  
 }
 .callbackBtn:hover {
     color: #282FD2;
@@ -56,29 +63,34 @@
 .introImage {
     position: relative;
 
-    width: 494px;
-    height: 693px;
+    width: 434px;
+    height: 609px;
 }
 .introImages {
     
     background-position: center;
-    width: 494px;
-    height: 693px;
+  
     position: relative;
 }
 .telImage {
+    width: 91px;
+    height: 91px;
     position: absolute;
     left: 70px;
     animation: livitation 5s infinite ;
     animation-delay: 3s;
 }
 .noteImage {
+    width: 113px;
+    height: 114px;
     position: absolute;
     left: -40px;
     bottom: 110px;
     animation: livitation 5s infinite;
 }
 .pcImage {
+    width: 70px;
+    height: 70px;
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -106,6 +118,13 @@
 }
 
 @media (max-device-width: 1367px) {
+    .introText {
+        width: 493px;
+    }
+    .introTitle {
+        line-height: 40px;
+        font-size: 30px;
+    }
     
     .introImages {
             width: 394px;
@@ -137,4 +156,7 @@
         height: 463px;
         padding: 0;
     } 
+    .callbackBtn {
+        width: 252px;
+    }
 }

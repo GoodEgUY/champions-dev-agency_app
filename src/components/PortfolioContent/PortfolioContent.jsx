@@ -11,6 +11,8 @@ const PortfolioContent = () => {
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard1.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard1Hover.png",
       url: "/portfolio/happy-del",
+      imageLaptopUnhover: "./images/PortfolioCardsImages/portCard1Laptop.png",
+      imageLaptopHover:"./images/PortfolioCardsImages/portCard1LaptopHover.png"
     },
     {
       name: "HelpPoint",
@@ -19,6 +21,8 @@ const PortfolioContent = () => {
       imageUrlUnHover: "./images/PortfolioCardsImages/portCard2.png",
       imageUrlHover: "./images/PortfolioCardsImages/portCard2Hover.png",
       url: "/portfolio/helppoint",
+      imageLaptopUnhover: "./images/PortfolioCardsImages/portCard2Laptop.png",
+      imageLaptopHover:"./images/PortfolioCardsImages/portCard2LaptopHover.png"
     },
   ];
   return (
@@ -32,6 +36,8 @@ const PortfolioContent = () => {
             urluh={obj.imageUrlUnHover}
             urlh={obj.imageUrlHover}
             url={obj.url}
+            urlluh = {obj.imageLaptopUnhover}
+            urllh = {obj.imageLaptopHover}
           />
         ))}
       </div>

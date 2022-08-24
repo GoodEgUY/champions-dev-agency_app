@@ -14,12 +14,10 @@ const IntroContent = () => {
       <div className="introContent">
         <div className="introText">
           <h3 className="introTitle">
-            <span>Лучшее</span> решение для <br />
-            Вашего бизнеса
+            <span>Зарабатывайте</span> в 3 раза больше благодаря mobile super app при - ложению для общепита уже через 1 месяца работы с момента запуска
           </h3>
           <p className="introParag">
-            Создание сайтов и мобильных приложений для любого ресторана россии и
-            мира.
+          У нас уже есть кликабельный прототип приложения<br/> с уникальными функциями которые проверенны реальными потенциальными пользователями
           </p>
           <button
             className="callbackBtn"

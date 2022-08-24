@@ -10,6 +10,12 @@
     background-repeat: no-repeat;
     
 }
+.portfolioCardImageLaptopUnHover {
+    display: none;
+}
+.portfolioCardImageLaptopHover {
+    display: none;
+}
 .portfolioCard1Hover{
     cursor: pointer;
     border-radius: 10px;
@@ -98,5 +104,28 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (max-device-width: 1367px) {
+    .portfolioCard1 {
+        height: 436px;
+        width: 452px;
+    }
+    .portfolioCard1Hover {
+        height: 436px;
+        width: 452px;
+    }
+    .portfolioCardImageLaptopUnHover {
+        display: flex;
+    }
+    .portfolioCardImageLaptopHover {
+        display: flex;
+    }
+    .portfolioCardImageHover {
+        display: none;
+    }
+    .portfolioCardImageUnHover {
+        display: none;
     }
 }
