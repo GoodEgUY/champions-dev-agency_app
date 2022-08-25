@@ -173,6 +173,12 @@ header {
     }
     .headerNavLink::after {
         left: 15px;
+ 
+    }
+    .active p {
+    
+        margin-bottom: 0 ;
+        
     }
 }
 

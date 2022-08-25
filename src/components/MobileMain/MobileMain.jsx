@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import {BrowserRouter, Routes, Route } from "react-router-dom";
-import "./main.css";
+import "./mobilemain.css";
 import Media from "react-media";
 
 // 1 stage pages
@@ -15,18 +15,18 @@ import TeamContent from "../TeamContent/TeamContent";
 // 2 stage pages
 import HappyDelAbout from "../PortfolioCartAbout/HappyDelAbout";
 import HelpPointAbout from "../PortfolioCartAbout/HelpPointAbout";
-import Header from "../Header/Header";
+
 import MobileNav from "../Footer/MobileNav";
 
-const Main = () => {
+const MobileMain = () => {
   return (
     <>
 <BrowserRouter>
       
-        <Header/>
+        
       <div className="screenContent">
         <div className="content">
-          
+          <MobileNav/>
           <Routes>
             <Route path="/" element={<IntroContent />} />
             <Route path="/benefits" element={<BenefitsContent />} />
@@ -50,4 +50,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MobileMain;

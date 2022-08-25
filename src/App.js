@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import Media from "react-media";
 import "./App.css";
 import Main from "./components/Main/Main";
-
+import MobileMain from "./components/MobileMain/MobileMain";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
     }}>
       {matches => (
        <Fragment>
-          {matches.small && <Main/>}
+          {matches.small && <MobileMain/>}
           {matches.medium && <Main/>}
           {matches.large && <Main/> }
        </Fragment>
