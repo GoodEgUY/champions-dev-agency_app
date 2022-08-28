@@ -87,3 +87,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-device-width: 550px) {
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  
+  background-color: rgba(214, 214, 214, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  
+  background-color: rgba(40, 47, 210, 0.3) ;
+  border-radius: 10px;
+}
+}

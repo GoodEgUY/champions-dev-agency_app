@@ -17,7 +17,7 @@
 }
 
 .mobileNavLink {
-    
+    margin-bottom: 0;
     margin-top: 0;
     
     
@@ -34,7 +34,7 @@
 }
 
 .mobileNavLink::before {
-    z-index: -1;
+    z-index: -1 ;
     align-items: center;
     border-radius: 50% 50% 0 0 ;
     content: "";

@@ -16,7 +16,8 @@ import TeamContent from "../TeamContent/TeamContent";
 import HappyDelAbout from "../PortfolioCartAbout/HappyDelAbout";
 import HelpPointAbout from "../PortfolioCartAbout/HelpPointAbout";
 
-import MobileNav from "../Footer/MobileNav";
+import MobileNav from "../MobileNav/MobileNav";
+import MobileHeader from "../MobileHeader/MobileHeader";
 
 const MobileMain = () => {
   return (
@@ -26,7 +27,7 @@ const MobileMain = () => {
         
       <div className="screenContent">
         <div className="content">
-          <MobileNav/>
+          <MobileHeader/>
           <Routes>
             <Route path="/" element={<IntroContent />} />
             <Route path="/benefits" element={<BenefitsContent />} />
@@ -43,6 +44,7 @@ const MobileMain = () => {
             element={<HelpPointAbout />}
           />
           </Routes>
+          <MobileNav/>
         </div>
       </div>
       </BrowserRouter>

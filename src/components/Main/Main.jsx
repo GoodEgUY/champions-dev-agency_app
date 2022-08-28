@@ -16,7 +16,7 @@ import TeamContent from "../TeamContent/TeamContent";
 import HappyDelAbout from "../PortfolioCartAbout/HappyDelAbout";
 import HelpPointAbout from "../PortfolioCartAbout/HelpPointAbout";
 import Header from "../Header/Header";
-import MobileNav from "../Footer/MobileNav";
+
 
 const Main = () => {
   return (

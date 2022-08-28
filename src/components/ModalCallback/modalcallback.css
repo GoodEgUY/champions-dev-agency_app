@@ -81,3 +81,27 @@
         opacity:1;
     }
 }
+@media (max-device-width: 550px) { 
+    .modalWrapper {
+        padding: 0 16px;
+    }
+    .modalCallbackBody {
+        padding: 22px;
+    }
+    .callbackFormContent {
+        width: 100%;
+    }
+    .callbackFormContent h4 {
+        letter-spacing: 1px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .callbackFormContent p {
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: .8px;
+    }
+    .callbackModalBtn {
+        height: 56px;
+    }
+}

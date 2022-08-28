@@ -90,3 +90,38 @@
         display: none;
     }
 }
+@media (max-device-width: 550px) {
+    .benefitsLogo {
+        display: none;
+    }
+    .benefitsTitle {
+        
+        padding-right: 16px;
+        overflow-x: scroll;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .benefitsTitle h5 {
+        font-size: 16px  ;
+    }
+    .benefitsTitle p {
+        font-size: 16px;
+    }
+    .benefitsCart {
+        margin-right: 8px;
+        padding: 24px;
+        width: 328px;
+        height: 224px;
+    }
+    .benefitsScreenMobile {
+
+        width: 100vw;
+        overflow: hidden;
+        
+    }
+    .benefitsScreen {
+       flex-direction: column;
+    }
+    
+}

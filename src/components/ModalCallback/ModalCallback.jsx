@@ -62,9 +62,9 @@ const ModalCallback = (props) => {
               onClick={props.closeModal}
             />
             <div className="callbackFormContent">
-              <h4>Обсудить проект</h4>
+              <h4> Подключим ваш бизнес общепита к mobile super app приложение по России</h4>
               <p>
-                Оставьте свои контакты и мы свяжемся, чтобы обсудить ваш проект.
+              Оставьте свои контакты и мы свяжемся с вами, чтобы обсудить ваш продукт
               </p>
               <form action="" className="callbackForm" onSubmit={sendAlert}>
                 <input
