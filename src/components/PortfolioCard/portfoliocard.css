@@ -129,3 +129,29 @@
         display: none;
     }
 }
+
+@media (max-device-width: 550px) {
+    .portfolioCard1 {
+        height: 328px;
+        width: 328px;
+    }
+    .portfolioCard1Hover {
+        height: 328px;
+        width: 328px;
+    }
+    .portfolioCardImageLaptopUnHover {
+        width: 328px;
+        height: 328px;
+        display: flex;
+    }
+    .portfolioCardImageLaptopHover {
+        width: 328px;
+        height: 328px;
+        display: flex;
+    }
+    .portfolioCardTitle img {
+        animation: arrowLink 2s infinite;
+        
+    }
+  
+}

@@ -238,14 +238,7 @@ const Services = () => {
                 Плюсы mobile app
               </p>
             </div>
-            <button
-                  className="callbackBtn"
-                  onClick={() => {
-                    setModalOpened(true);
-                  }}
-                >
-                  заказать услугу
-                </button>
+            
             <div className="callServiceFormBody">
               <div className="callServiceFormContent">
                 <h4>
@@ -287,14 +280,16 @@ const Services = () => {
             
           </div>
         </div>
+        <div className="orderButton">
         <button
-                  className="callbackBtn"
-                  onClick={() => {
-                    setModalOpened(true);
-                  }}
-                >
-                  заказать услугу
-                </button>
+            className="callbackBtn"
+            onClick={() => {
+              setModalOpened(true);
+            }}
+          >
+            заказать услугу
+          </button>
+          </div>
       </div>
     </>
   );

@@ -55,6 +55,7 @@ const BenefitsContent = () => {
             </div>
           </div>
         </div>
+        <div className="orderButton">
         <button
             className="callbackBtn"
             onClick={() => {
@@ -63,6 +64,7 @@ const BenefitsContent = () => {
           >
             заказать услугу
           </button>
+          </div>
       </div>
     </div>
     </>

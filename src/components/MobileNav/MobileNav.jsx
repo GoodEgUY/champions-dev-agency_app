@@ -45,6 +45,9 @@ const MobileNav = () => {
           <p className="mobileNavLink">Польза</p>
         </div>
       </NavLink>
+      <div className="plusButton">
+        <img src="./images/pluss.png" alt="" />
+      </div>
       <NavLink to="/services">
         <div className="headerMobileNavItem">
           <svg

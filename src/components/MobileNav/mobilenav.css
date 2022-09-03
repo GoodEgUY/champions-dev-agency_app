@@ -18,7 +18,7 @@
 
 .mobileNavLink {
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: -5px;
     
     
     font-size: 14px;
@@ -40,7 +40,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: -37px;
+    top: -32px;
     left: 27px;
     width: 10px;
     height: 10px;
@@ -57,11 +57,23 @@
     content: "";
     display: block;
     position: absolute;
-    top: -40px;
+    top: -35px;
     left: 8px;
     width: 20px;
     height: 20px;
     background-color: #282FD2;
     transform: scale(0);
     transition: transform .2s ease-in;
+}
+
+.plusButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #282FD2;
+    border: 4px solid #eef1fc;
 }

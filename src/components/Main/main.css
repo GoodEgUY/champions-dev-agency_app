@@ -1,11 +1,13 @@
 .content {
     width: 1180px;
+    
    
 }
 .screenContent {
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 
@@ -13,5 +15,6 @@
     .content {
         width: 100%;
         padding: 16px;
+        padding-bottom: 0;
     }
  }
