@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState} from "react";
+import {BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./mobilemain.css";
 import Media from "react-media";
 
@@ -20,10 +20,12 @@ import MobileNav from "../MobileNav/MobileNav";
 import MobileHeader from "../MobileHeader/MobileHeader";
 
 const MobileMain = () => {
+  
+const [hidden, setHidden] = useState(true);
   return (
     <>
 <BrowserRouter>
-      
+        
         
       <div className="screenContent">
         <div className="content">
@@ -37,14 +39,14 @@ const MobileMain = () => {
             <Route path="/team" element={<TeamContent />} />
             <Route
               path="/portfolio/happy-del"
-              element={<HappyDelAbout />}
+              element={<HappyDelAbout makeHidden={() => setHidden(false)} makeUnHidden={() => setHidden(true)}/> }
             />
             <Route
             path="/portfolio/helppoint"
-            element={<HelpPointAbout />}
+            element={<HelpPointAbout  makeHidden={() => setHidden(false)} makeUnHidden={() => setHidden(true)}/>}
           />
           </Routes>
-          <MobileNav/>
+           { hidden ? <MobileNav/> : null  }
         </div>
       </div>
       </BrowserRouter>

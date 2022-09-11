@@ -2,7 +2,7 @@ import React from "react";
 import "./portfoliocontent.css"
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 
-const PortfolioContent = () => {
+const PortfolioContent = (props) => {
   const portfolioBase = [
     {
       name: "Happy Del",
@@ -13,6 +13,7 @@ const PortfolioContent = () => {
       url: "/portfolio/happy-del",
       imageLaptopUnhover: "./images/PortfolioCardsImages/portCard1Laptop.png",
       imageLaptopHover:"./images/PortfolioCardsImages/portCard1LaptopHover.png"
+    
     },
     {
       name: "HelpPoint",
@@ -28,6 +29,7 @@ const PortfolioContent = () => {
   return (
     <div className="portfolioContent">
       <h3 className="portfolioTitle">Портфолио нашей команды</h3>
+      <div className="portfolioScreen">
       <div className="portfolioCarts">
         {portfolioBase.map((obj) => (
           <PortfolioCard
@@ -40,6 +42,7 @@ const PortfolioContent = () => {
             urllh = {obj.imageLaptopHover}
           />
         ))}
+      </div>
       </div>
     </div>
   );

@@ -94,7 +94,7 @@ code {
 @media (max-device-width: 550px) {
 ::-webkit-scrollbar {
   width: 0px;
-  height: 2px;
+  height: 1px;
 }
 
 ::-webkit-scrollbar-track {

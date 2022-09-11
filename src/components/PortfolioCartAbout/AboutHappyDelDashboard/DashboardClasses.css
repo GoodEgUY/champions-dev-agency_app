@@ -86,3 +86,15 @@ max-width: 80vw;
     top: -35px;
     right: -30px;
 }
+
+@media (max-device-width: 550px) {
+    .dashboardTitle p {
+        font-size: 14px;
+    }
+    .dashboardTitle img {
+        display: none;
+    }
+    .tab-content p  {
+        font-size: 16px;
+    }
+}

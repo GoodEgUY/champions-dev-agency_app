@@ -65,6 +65,7 @@
     transition: all .2s ease-in;
     
 }
+
 .tab-link p {
     font-family: Noah-400;
     text-decoration: none;
@@ -171,11 +172,68 @@
 }
 
 
-@media (max-device-width: 500px) {
+@media (max-device-width: 550px) {
     .aboutDashboardNav {
-        
+        padding: 0 16px;
+        display: flex;
+        flex-direction: row;
+        overflow-y: scroll;
+        width: 100%;
+    }
+    .tab-link:last-child {
+        margin-right: 0;
+    }
+    .dashboardRow {
+        margin-bottom: 10px;
     }
     .aboutDashboard {
-        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        margin-left: -16px;
     }
+    .aboutDashboardScreen {
+        padding: 20px 24px;
+        height: auto;
+        width: 91%;
+        margin: 5px 16px
+        0 16px;
+    }
+    .tab-link {
+        width: 156px;
+        height: 144px;
+    }
+    .tab-link p {
+        font-size: 16px;
+    }
+    .portfolioAboutNav {
+        align-items: flex-start;
+        justify-content: left;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .backToMain {
+        margin-bottom: 12px;
+    }
+    .portNavigation {
+        display: flex;
+    }
+    .aboutPortfolioNavLink {
+        font-size: 16px;
+        margin-right: 24px;
+    }
+    .aboutPortfolioNavLink:last-child {
+        margin-right: 0;
+    }
+    .contentTitle {
+        margin-left: 0;
+        margin-right: 0;
+       
+        font-size: 24px;
+        display: flex;
+        margin-bottom: 20px;
+    }   
+    .backToMain {
+        font-family: Noah-700;
+    }  
 }

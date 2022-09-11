@@ -18,9 +18,14 @@
     font-family: Noah-700;
 }
 @media (max-device-width: 550px) {
+    .portfolioScreen {
+        width: 100vw;
+        margin-left: -16px;
+    }
     .portfolioCarts {
-        justify-content: left;
         width: 100%;
+        justify-content: left;
+        padding-left: 16px;
      overflow-y: scroll;
     }
 }
